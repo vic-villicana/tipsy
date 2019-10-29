@@ -1,0 +1,17 @@
+<% include partials/header %>
+<header class="client-list">
+  <% include partials/nav %>
+  <% job.forEach(function(job){ %>
+    <div class="jsquare">
+        <h3><%=job.name%></h3>
+        <h4><%=job.option%></h4>
+        <h4><%=job.email%></h4>
+    
+        <div>
+          <P><%=job.description%></P>
+        </div>    
+      </div>
+ <% });%>
+  
+</header>
+<% include partials/footer %>

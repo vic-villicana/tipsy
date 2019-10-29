@@ -1,0 +1,32 @@
+<% include partials/header %>
+<header class="header con">
+  <% include partials/nav %>
+  <div class="contact"> 
+    <div class="contact-form">
+      <h1>
+        Book Now!
+      </h1>
+      <p>
+         Not sure where to start?
+         We're here to help!
+      </p>
+    <div class="form" >
+      <form action="/clients" method="POST">
+        <input type="text" name="name" id="name" placeholder="Name First/Last">
+        <input type="text" id="email" name="email" placeholder="E-Mail Address">
+        <select name="options"  placeholder="choose an option">
+          <option value="">open bar</option>
+          <option value="">cash bar</option>
+          <option value="">self serve</option>
+          <option value="">I have a question</option>
+        </select>
+        <textarea name="description" placeholder="Thoughts?"></textarea>
+        <input id='submit'  type="submit" value="Let's Talk">
+      </form>
+      
+    </div>
+    </div>
+    </div>
+    <div class="spacer"></div> 
+</header>
+<% include partials/footer %>

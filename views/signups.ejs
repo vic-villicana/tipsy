@@ -1,0 +1,11 @@
+<% include partials/header %>
+<header class="header">
+<% include partials/nav %>
+<h1>Your signups</h1>
+<%signups.forEach(function(signup){%>
+  <h2>email:</h2>
+  <h3><%=signup.email%></h3> 
+<%})%>
+</header>
+
+<% include partials/footer %>

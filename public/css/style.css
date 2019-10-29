@@ -1,0 +1,686 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  
+}
+
+html{
+  background-color:rgb(253, 253, 253);
+  text-rendering: optimizeLegibility;
+  font-family: 'Comfortaa', cursive;
+
+  font-size:15px;
+  font-weight:300;
+  overflow-x: hidden;
+}
+
+body{
+  max-width:480px;
+  margin:0 auto;
+  overflow-x: hidden;
+}
+
+h1{
+  font-size:350%;
+  line-height:.9em;
+}
+
+h3{
+  font-family: 'Yellowtail', cursive;
+}
+
+h2{
+  font-family: 'Yellowtail', cursive;
+}
+
+#logo img{
+  width:145px;
+  height:auto;
+
+}
+
+
+
+
+.header{
+  height:78vh;
+  background-image:linear-gradient(rgba(37, 37, 37, 0.288), rgba(37, 37, 37, 0.068)),url(/img/tipsyparty.jpg);
+  position:relative;
+  background-position: center;
+  background-size:cover;
+  background-attachment: fixed;
+}
+
+
+.navbar{
+  justify-content:space-between;
+  align-items:center;
+  display:flex;
+  width:100%;
+  position: relative;
+  padding:0 15px;
+  padding-right:2em;
+  z-index: +1;
+  min-height:8vh;
+  background:linear-gradient(rgba(71, 71, 71, 0.89), rgba(0, 0, 0, 0));
+  font-size:1rem;
+  transform: translateY(-25px);
+}
+
+.nav-links{
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content:space-around;
+  width:44%;
+  position:absolute;  
+  right:0px;
+  height:95vh;
+  top: 3vh;     
+  padding-top:2em;   
+  background-color:rgba(44, 143, 209, 0.705);;
+  transform: translateX(100%);
+  transition:transform 0.5s ease-in;
+  
+}
+
+.burger{
+  display:block;
+  z-index: +2;
+}
+
+
+.burger div{
+  width:25px;
+  height:2px;
+  background-color:white;
+  margin:5px;
+}
+
+.nav-active{
+  transform: translate(0%)
+}
+
+.navbar a{ 
+  display:block;
+  float:right;
+  color:aliceblue;
+  text-decoration:none;
+  
+}
+
+.navbar a:hover{
+  color:rgba(26, 243, 55, 0.938);
+}
+
+.svg{
+  width:8%;
+  height:auto;
+  margin:0 1em;
+}
+
+.hero-text-box{
+  position:absolute;
+  width:100%;
+  left:50%;
+  top:40%;
+  transform: translate(-50%, -50%);
+  color:aliceblue;
+  text-align: center;
+  font-size: 1.25rem;
+  display:inline-block;
+}
+
+.hero-text-box h2{
+  font-family:"comfortaa", cursive;
+  padding-bottom:15px;
+}
+
+.hero-text-box h4{
+  padding-bottom:1.5em;
+}
+
+.thanks{
+  position:relative;
+  left:5%;
+  top:8%
+}
+
+/*--- titles---*/
+/*--- titles---*/
+/*--- titles---*/
+
+.index h1{
+  color:rgb(27, 27, 27);
+}
+
+.story h2{
+  font-family:'Yellowtail', cursive;
+  font-size:3.5rem;
+  text-shadow: -1px 0 #FE9C96, 0 3.5px #FE9C96, 2.5px 0 #FE9C96, 0 -1px #FE9C96;
+}
+
+.story h4{
+  color:#FE9C96;
+}
+
+
+/*--- buttons---*/
+/*--- buttons---*/
+/*--- buttons---*/
+
+.newbtn{
+  border:2px solid rgb(111, 169, 235);
+  border-radius:6px;
+  padding:10px 20px;
+
+}
+
+.newbtn a{
+  text-decoration:none;
+  color: #ffffff;
+}
+
+.newbtn:hover {
+  background:whitesmoke;    
+  transition-duration:.5s;
+}
+
+.newbtn:hover a{
+  
+  color:rgba(102, 188, 228);
+}
+
+
+.contact{
+  height: auto;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.5);
+  background-position: center;
+  background-size: cover;
+  padding: 25px;
+  margin: 0 15px;
+}
+
+.contact-form{
+  height:auto;
+  text-align:center;
+  position: relative;
+  width:auto;
+        
+}
+
+.contact-form h1{
+  margin:0;
+  font-size:2rem;
+  
+}
+
+.contact-form p{
+  margin:10px auto;
+  width:90%;
+  font-size:1.2rem;
+  font-weight:800;
+  
+}
+
+.form{
+position: relative;
+margin:0 auto;
+width:100%;
+
+}
+
+form{
+  font-size:5rem;
+  color:white;
+}
+
+input{
+  color:aliceblue;
+  
+  width:90%;
+  margin:20px 0;
+  background:rgba(0, 0, 0, 0);
+  border:none;
+  border-bottom:1px solid rgb(107, 107, 219);
+}
+
+select{
+  width:90%;
+  margin:40px 0;
+  background:rgba(0, 0, 0, 0);
+  border:none;
+  border-bottom:1px solid rgb(107, 107, 219);
+ }
+
+.form select{
+  font-size:1rem;
+  font-family:"comfortaa", cursive;
+  color:black;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+::placeholder{
+  color:black;
+  font-size:1rem;
+  font-family:"comfortaa", cursive;
+  
+}
+textarea{
+  width:90%;
+  margin-top:40px;
+  background:rgba(0, 0, 0, 0);
+  border:none;
+  border-bottom:1px solid rgb(107, 107, 219);
+}
+
+
+#submit{ 
+  font-family:'Comfortaa', cursive;
+  padding:10px;
+  background:rgb(15, 148, 15);
+  color:whitesmoke;
+  border-radius: 6px;
+  font-size: 1rem;
+  margin:0 auto;
+  width:50%;
+}
+
+#submit:hover{
+  background:rgb(71, 177, 243);
+  transition-duration: .5s;
+}
+
+
+footer{
+  height:auto;
+  background: rgb(45, 161, 228);
+  padding:20px 0;
+  
+}
+
+.con{
+  height:100%;
+  background-image:url(/img/tipsyparty.jpg);
+  position:relative;
+  background-position: center;
+  background-size:cover;
+  background-attachment: fixed;
+}
+
+.footer{
+  margin:0 auto;
+  width:75%;
+  font-size:1.25rem;
+  color:aliceblue;
+  text-align: center;
+  position:relative;
+  }
+/*-- reusable components--*/
+/*-- reusable components--*/
+/*-- reusable components--*/
+/*-- reusable components--*/
+.float{
+  animation-name:float;
+  animation-duration:4s;
+  animation-iteration-count: infinite;
+  animation-timing-function:ease-in-out;  
+  margin-top:5px;
+}
+
+@keyframes float {
+  from { transform: translate(0,  0px); }
+  65%  { transform: translate(0, 15px); }
+  to   { transform: translate(0, -0px); }    
+}
+
+.pevents{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  
+}
+
+.title{
+  font-family: 'Galada', cursive;
+  text-align: center;
+  color:rgb(44, 143, 209);
+  padding-top:3em;  
+  text-shadow: -1px 0 #FE9C96, 0 1px #FE9C96, 2.5px 0 #FE9C96, 0 -1px #FE9C96;
+  
+}
+
+.subtitle{
+  font-family: 'Comfortaa', cursive;
+  font-size:1rem;
+  color:#86D12C;
+  
+  padding-top:3em;
+  text-align: center;
+  
+}
+
+.subtitle h2{
+  font-family:'Comfortaa', cursive;
+  white-space: nowrap;
+  width:100%;
+  overflow: auto;
+  margin:0 auto;
+  font-weight:bold;
+}
+
+.paragraph{
+  width:100%;
+  padding:20px;
+  font-size:1.25rem;
+}
+
+.b2 .paragraph{
+  width:100%;
+  padding:20px;
+  font-size:1.25rem;
+  color:white;
+}
+
+.sone .paragraph{
+  width: auto;
+  padding: 10px 40px;
+  font-size: 1.25rem;
+  position: relative;
+  top: 20%;
+  color: white;
+}
+
+.spacer{
+height: 75px;
+width:100%;
+}
+
+
+.spacer-two{
+  height: 30px;
+  width:100%;
+  }
+
+.btext{
+  position:relative;
+  width:100%;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  color:aliceblue;
+  margin-left:1em;
+}
+
+.btext p{
+  font-family:'Comfortaa', cursive;
+  margin: 0 auto;
+  font-size:1.25rem;
+  color:white;
+
+}
+
+/*---one offs---*/
+/*---one offs---*/
+/*---one offs---*/
+
+.banner{
+  width:100%;
+  height: 13em;
+  background:url(/img/tipsymoscow.jpg);
+  background-position:center;
+  background-size:cover;
+  position:relative;
+  background-attachment: fixed;
+}
+
+.b2{
+  background: url(/img/beverage-citrus-close-up-1265910.jpg);
+  background-position:center;
+  background-size:cover;
+  background-attachment: fixed;
+  margin-top:1em;
+  padding:2em 0;
+}
+
+.b3{
+  background: url(/img/beverage-bubble-citrus-357577.jpg);
+  background-position:center;
+  background-size:cover;
+  background-attachment: fixed;
+  height:35vh;
+}
+
+.b4{
+  background: url(/img/beverage-bubble-citrus-357577.jpg);
+  background-position:center;
+  background-size:cover;
+  background-attachment: fixed;
+  height:35vh;
+  margin-top:5rem;
+}
+
+.grid-container{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows:100px 100px 125px 125px 125px 125px;
+}
+
+.numtwo{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows:100px 100px 125px 125px;
+  margin-bottom:15px;
+  padding-top:1.5em;
+}
+
+.gone{
+  grid-column: 1 / span 2;
+  grid-row:1 / span 2;
+  background: url(/img/adults-alcohol-alcoholic-beverage-1304473.jpg);
+  background-size:cover;
+  background-position: center;
+}
+
+.gtwo{
+  grid-column: 1 ;
+  grid-row:3 / span 2;
+  background: url(/img/beverage-citrus-close-up-1265910.jpg);
+  background-size:cover;
+  background-position: center;
+}
+
+.gthree{
+  grid-column: 2 ;
+  grid-row:3 / span 1;
+  background: url(/img/beverage-bubble-citrus-357577.jpg);
+  background-size:cover;
+  background-position: center;
+}
+
+.gfour{
+  grid-column: 2 ;
+  grid-row:4 / span 1;
+  background: url(/img/bottle-celebration-crowd-948199.jpg);
+  background-size:cover;
+  background-position: center;
+}
+
+.gfive{
+  grid-column: 2 ;
+  grid-row:5 / span 2;
+  background: url(/img/adult-alcoholic-beverage-bar.jpg);
+  background-size:cover;
+  background-position: center;
+}
+
+.gsix{
+  grid-column: 1 ;
+  grid-row:6 / span 1;
+  background: url(/img/alcohol-alcoholic-beverage-bar.jpg);
+  background-size:cover;
+  background-position: center;
+}
+
+.gseven{
+  grid-column: 1 ;
+  grid-row:5 / span 1;
+  background:url(/img/adult-alcohol-alcoholic-beverage.jpg);
+  background-size:cover;
+  background-position: center;
+}
+
+.sone{
+  background:linear-gradient(rgba(37, 37, 37, 0.808), rgba(0, 0, 0, 0)),url(/img/alcohol-bar-beer-989711.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.stwo{
+  background:url(/img/adult-alcohol-alcoholic-beverage.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.sthree{
+  background:url(/img/adult-alcoholic-beverage-bar.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.sfour{
+  background:url(/img/alcohol-alcoholic-beverage-bar.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.db2{
+  margin:0 auto;
+  text-align:center;
+}
+
+.dbthree{
+  margin-top:1.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 9em;
+  
+}
+
+.divide-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.75em;
+  margin-top: 5em;
+}
+.ques{
+  margin-top:1em;
+}
+
+
+.divide-box h3{
+  font-size:1.75rem;
+}
+
+.divide-box a{
+  text-decoration: none;
+  color: rgb(111, 169, 235);
+}
+
+.dbtwo{
+  margin-top: 1.5em;
+}
+
+.btn a {
+  text-decoration: none;
+  padding: 13px;
+  background: linear-gradient(45deg, rgb(111, 169, 235), #86D12C);
+  color: whitesmoke;
+  
+  border-radius:6px;
+  font-size: 1rem;
+  margin-right: 0px;
+}
+
+.howedo{
+  margin-top:2em;
+}
+
+.test p{
+  font-size:.85rem;
+  padding-bottom:.8em;
+}
+
+.test h2{
+  width:95%;
+  text-align: right;
+  color:rgb(212, 231, 35);
+  text-shadow: -1px 0 rgb(44, 143, 209), 0 3px rgb(44, 143, 209), 2px 0 rgb(44, 143, 209), 0 -1px rgb(44, 143, 209);
+}
+
+.test{
+  padding:1em;
+  border: 1.5px solid #FE9C96;
+  margin: 1em;
+  border-radius: 6px;
+}
+
+.test-two h2{
+  text-align:left;
+  color:#FE9C96;
+  padding-bottom:1rem;
+}
+
+.test-two h1{
+  font-size: 2.75rem;
+  text-align:left;
+  color:#FE9C96;
+  padding:1rem 0;
+}
+
+.test-two-one h1{
+  text-align:right;
+  font-size: 2.75rem;
+  color:#FE9C96;
+  padding:1rem 0;
+}
+
+.test-two-one h2{
+  text-align:right;
+  width: 100%;
+  padding-bottom:1rem;
+}
+
+.test-two ul {
+  list-style-type:none;
+  padding-bottom:1em;
+}
+
+.test-two-one ul {
+  list-style-type:none;
+  padding-bottom:1em;
+  text-align:right;
+  
+}
+
+.subtext{
+  font-size:.80rem;
+  padding:1.25em;
+  text-align:center;
+  margin-bottom:5.5em;
+}
+
+/*--- page two ---*/
+
+.client-list{
+  height:100vh;
+  background-image:linear-gradient(rgba(71, 71, 71, 0.918), rgba(0, 0, 0, 0.39)),url(/img/tipsyparty.jpg);
+  position:relative;
+  background-position: center;
+  background-size:cover;
+  background-attachment: fixed;
+}
