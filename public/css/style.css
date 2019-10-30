@@ -623,10 +623,12 @@ width:100%;
 }
 
 .test{
-  padding:1em;
-  border: 1.5px solid #FE9C96;
-  margin: 1em;
-  border-radius: 6px;
+  padding:1.5em;
+  background-image:linear-gradient(rgba(20, 20, 20, 0.575), rgba(20, 20, 20, 0.575)),url(/img/tipsyparty.jpg);
+  background-position: center;
+  background-size:cover;
+  
+  
 }
 
 .test-two h2{
@@ -649,6 +651,12 @@ width:100%;
   padding:1rem 0;
 }
 
+.test-two-one{
+  background-image:linear-gradient(rgba(20, 20, 20, 0.575), rgba(20, 20, 20, 0.575)),url(/img/beverage-citrus-close-up-1265910.jpg);
+  background-position: center;
+  background-size:cover;
+}
+
 .test-two-one h2{
   text-align:right;
   width: 100%;
@@ -667,6 +675,9 @@ width:100%;
   
 }
 
+li p{
+  color:white;
+}
 .subtext{
   font-size:.80rem;
   padding:1.25em;
