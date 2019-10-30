@@ -611,7 +611,7 @@ width:100%;
 }
 
 .test p{
-  font-size:.85rem;
+  font-size:.9rem;
   padding-bottom:.8em;
 }
 
@@ -625,8 +625,9 @@ width:100%;
 .test{
   padding:1em;
   border: 1.5px solid #FE9C96;
-  margin: 1em;
+  margin: 1em auto;
   border-radius: 6px;
+  max-width:335px;
 }
 
 .test-two h2{
