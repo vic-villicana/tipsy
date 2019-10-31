@@ -309,12 +309,12 @@ form{
 }
 
 input{
-  color:aliceblue;
-  
+  color:black;  
   width:90%;
   margin:20px 0;
   background:rgba(0, 0, 0, 0);
   border:none;
+  font-size: 1.4rem;
   border-bottom:1px solid rgb(107, 107, 219);
 }
 
@@ -344,6 +344,7 @@ textarea{
   margin-top:40px;
   background:rgba(0, 0, 0, 0);
   border:none;
+  font-size:1.5rem;
   border-bottom:1px solid rgb(107, 107, 219);
 }
 
