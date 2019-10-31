@@ -6,7 +6,7 @@
 }
 
 html{
-  background-color:rgb(253, 253, 253);
+  background-color:rgb(235, 235, 235);
   text-rendering: optimizeLegibility;
   font-family: 'Comfortaa', cursive;
 
@@ -37,11 +37,20 @@ h2{
 #logo img{
   width:145px;
   height:auto;
-
+  
 }
 
+.logo img{
+  width:200px;
+  height:auto; 
+}
 
-
+.logo {
+  position: relative;
+  transform: translate(-50%, 15%);
+  top: 10%;
+  left: 50%;
+}
 
 .header{
   height:78vh;
@@ -346,7 +355,7 @@ footer{
 .title{
   font-family: 'Galada', cursive;
   text-align: center;
-  color:rgb(44, 143, 209);
+  color:rgb(71, 162, 223);
   padding-top:3em;  
   text-shadow: -1px 0 #FE9C96, 0 1px #FE9C96, 2.5px 0 #FE9C96, 0 -1px #FE9C96;
   
@@ -355,7 +364,7 @@ footer{
 .subtitle{
   font-family: 'Comfortaa', cursive;
   font-size:1rem;
-  color:#86D12C;
+  color:rgb(155, 231, 62);
   
   padding-top:3em;
   text-align: center;
@@ -574,9 +583,18 @@ width:100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 1.75em;
-  margin-top: 5em;
+  padding-bottom: 3.5em;
+  margin-top: 4em;
 }
+
+.divide-boxtwo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 2em;
+  margin-top: 2.5em;
+}
+
 .ques{
   margin-top:1em;
 }
@@ -586,7 +604,16 @@ width:100%;
   font-size:1.75rem;
 }
 
+.divide-boxtwo h3{
+  font-size:1.75rem;
+}
+
 .divide-box a{
+  text-decoration: none;
+  color: rgb(111, 169, 235);
+}
+
+.divide-boxtwo a{
   text-decoration: none;
   color: rgb(111, 169, 235);
 }
@@ -610,9 +637,18 @@ width:100%;
   margin-top:2em;
 }
 
+.paint p{
+  color:aliceblue;
+}
+
+.paint{
+  background:rgb(71, 162, 223);
+}
+
 .testtwo p{
   font-size:.85rem;
   padding-bottom:.8em;
+  color:aliceblue;  
 }
 
 .testtwo h2{
@@ -628,8 +664,7 @@ width:100%;
   margin: 1em auto;
   border-radius: 6px;
   max-width:325px;
-  
-  
+  color:aliceblue;  
 }
 
 .test p{
@@ -648,10 +683,10 @@ width:100%;
   padding:1.5em;
   background-image:linear-gradient(rgba(20, 20, 20, 0.575), rgba(20, 20, 20, 0.575)),url(/img/tipsyparty.jpg);
   background-position: center;
-  background-size:cover;
-  
-  
+  background-size:cover;  
 }
+
+
 
 .test-two h2{
   text-align:left;

@@ -61,23 +61,7 @@
     <div class="float">
       <div class="divide-box dbtwo"><btn class="btn web"><a href="contact">Talk to Us!</a></btn></div>
   </div>
-  <div class="spacer"></div>
+  
   </section>
-  <section >
-    <div class="contact-form index">
-      <h1>Keep in touch</h1>
-      <p>sign up for our newsletter and get exclusive offers!</p>
-      <div class="form" >
-      <form action="/signups" method="POST">
-      <input type="text" id="email" name="email" placeholder="E-Mail Address">        
-      <input id='submit'  type="submit" value="Holla!">
-      </form>            
-      </div>
-    </div>  
-    <div class="subtext">
-        <p>
-          we respect your privacy
-        </p>
-    </div>
-  </section>
+  <% include partials/form %>
   <% include partials/footer %>
