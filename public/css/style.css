@@ -201,7 +201,40 @@ h2{
   color:rgba(102, 188, 228);
 }
 
+.btn a {
+  text-decoration: none;
+  padding: 13px;
+  background: linear-gradient(45deg, rgb(111, 169, 235), #86D12C);
+  color: whitesmoke;  
+  border-radius:6px;
+  font-size: 1rem;
+  margin-right: 0px;
+}
 
+.bar a{
+  background: red;
+  margin-bottom:50px;
+  padding: 13px 30px;
+  text-decoration:none;
+  color:whitesmoke;
+  border-radius: 6px;
+}
+
+.bar{
+  margin:2em auto;  
+  display:inline-block;
+}
+
+.list ul{
+  padding-bottom:2em;
+}
+
+.web a{
+  color:white;
+}
+/*--- contact---*/
+/*--- contact---*/
+/*--- contact---*/
 .contact{
   height: auto;
   position: relative;
@@ -383,7 +416,12 @@ footer{
 .paragraph{
   width:100%;
   padding:20px;
-  font-size:1.25rem;
+  font-size:1.1rem;
+}
+
+.inline{
+  text-align:center;
+  padding-bottom:2.5em;
 }
 
 .b2 .paragraph{
@@ -575,7 +613,7 @@ width:100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 9em;
+  margin-bottom: 4em;
   
 }
 
@@ -611,6 +649,7 @@ width:100%;
 .divide-box a{
   text-decoration: none;
   color: rgb(111, 169, 235);
+  
 }
 
 .divide-boxtwo a{
@@ -622,16 +661,7 @@ width:100%;
   margin-top: 1.5em;
 }
 
-.btn a {
-  text-decoration: none;
-  padding: 13px;
-  background: linear-gradient(45deg, rgb(111, 169, 235), #86D12C);
-  color: whitesmoke;
-  
-  border-radius:6px;
-  font-size: 1rem;
-  margin-right: 0px;
-}
+
 
 .howedo{
   margin-top:2em;
@@ -668,7 +698,7 @@ width:100%;
 }
 
 .test p{
-  font-size:.85rem;
+  font-size:.9rem;
   padding-bottom:.8em;
 }
 
@@ -684,6 +714,8 @@ width:100%;
   background-image:linear-gradient(rgba(20, 20, 20, 0.575), rgba(20, 20, 20, 0.575)),url(/img/tipsyparty.jpg);
   background-position: center;
   background-size:cover;  
+  display:flex;
+  flex-direction:column;
 }
 
 
