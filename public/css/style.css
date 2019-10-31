@@ -8,7 +8,7 @@
 html{
   background-color:rgb(235, 235, 235);
   text-rendering: optimizeLegibility;
-  font-family: 'Comfortaa', cursive;
+  font-family: 'Raleway', sans-serif;
 
   font-size:15px;
   font-weight:300;
@@ -159,6 +159,35 @@ h2{
 /*--- titles---*/
 /*--- titles---*/
 /*--- titles---*/
+
+
+.title{
+  font-family: 'Comfortaa', cursive;
+  text-align: center;
+  color:rgb(71, 162, 223);
+  padding-top:3em;  
+  text-shadow: -1px 0 #FE9C96, 0 1px #FE9C96, 2px 0 #FE9C96, 0 -1px #FE9C96;
+  
+}
+
+.subtitle{
+  font-family: 'Comfortaa', cursive;
+  font-size:1rem;
+  color:rgb(155, 231, 62);
+  
+  padding-top:3em;
+  text-align: center;
+  
+}
+
+.subtitle h2{
+  font-family:'Comfortaa', cursive;
+  white-space: nowrap;
+  width:100%;
+  overflow: auto;
+  margin:0 auto;
+  font-weight:bold;
+}
 
 .index h1{
   color:rgb(27, 27, 27);
@@ -385,33 +414,6 @@ footer{
   
 }
 
-.title{
-  font-family: 'Galada', cursive;
-  text-align: center;
-  color:rgb(71, 162, 223);
-  padding-top:3em;  
-  text-shadow: -1px 0 #FE9C96, 0 1px #FE9C96, 2.5px 0 #FE9C96, 0 -1px #FE9C96;
-  
-}
-
-.subtitle{
-  font-family: 'Comfortaa', cursive;
-  font-size:1rem;
-  color:rgb(155, 231, 62);
-  
-  padding-top:3em;
-  text-align: center;
-  
-}
-
-.subtitle h2{
-  font-family:'Comfortaa', cursive;
-  white-space: nowrap;
-  width:100%;
-  overflow: auto;
-  margin:0 auto;
-  font-weight:bold;
-}
 
 .paragraph{
   width:100%;
@@ -506,7 +508,7 @@ width:100%;
   background-size:cover;
   background-attachment: fixed;
   height:35vh;
-  margin-top:5rem;
+  
 }
 
 .grid-container{
@@ -648,7 +650,7 @@ width:100%;
 
 .divide-box a{
   text-decoration: none;
-  color: rgb(111, 169, 235);
+  color:white;
   
 }
 
