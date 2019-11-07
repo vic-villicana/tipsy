@@ -6,9 +6,9 @@
 }
 
 html{
-  background-color:rgb(235, 235, 235);
+  background-color:#fefefe;
   text-rendering: optimizeLegibility;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size:15px;
   font-weight:300;
   overflow-x: hidden;
@@ -123,7 +123,7 @@ h2{
 }
 
 .svg{
-  width:8%;
+  width:18%;
   height:auto;
   margin:0 1em;
 }
@@ -132,7 +132,7 @@ h2{
   position:absolute;
   width:100%;
   left:50%;
-  top:40%;
+  top:45%;
   transform: translate(-50%, -50%);
   color:aliceblue;
   text-align: center;
@@ -142,7 +142,7 @@ h2{
 
 .hero-text-box h2{
   font-family:"comfortaa", cursive;
-  padding-bottom:15px;
+  
 }
 
 .hero-text-box h4{
@@ -194,7 +194,7 @@ h2{
 
 .story h2{
   font-family:'Yellowtail', cursive;
-  font-size:3.5rem;
+  font-size:3rem;
   text-shadow: -1px 0 #FE9C96, 0 3.5px #FE9C96, 2.5px 0 #FE9C96, 0 -1px #FE9C96;
 }
 
@@ -436,7 +436,6 @@ footer{
 .sone .paragraph{
   width: auto;
   padding: 10px 40px;
-  font-size: 1.25rem;
   position: relative;
   top: 20%;
   color: white;
@@ -791,14 +790,7 @@ li p{
 
 
 @media screen and (max-width:1920px){
-  html{
-    background-color:rgb(235, 235, 235);
-    text-rendering: optimizeLegibility;
-    font-family: 'Raleway', sans-serif;  
-    font-size:15px;
-    font-weight:300;
-    overflow-x: hidden;
-  }
+  
   
   body{
     max-width:1920px;
@@ -814,18 +806,95 @@ li p{
     background-size:cover;
     background-attachment: fixed;
   }
+
+  .grid-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows:14em 14em 18em 18em 18em 18em;
+  }
+
+  .b3{
+    background: url(/img/beverage-bubble-citrus-357577.jpg);
+    background-position:center;
+    background-size:cover;
+    background-attachment: fixed;
+    height:60vh;
+  }
+
+  .svg {
+    width: 8%;
+    height: auto;
+    margin: 0 1em;
+  }
+
+  .form {
+    position: relative;
+    margin: 0 auto;
+    width: 45%;
+  }
+
+  .db2 {
+    margin: 0 auto;
+    text-align: center;
+    width: 50%;
+  }
+
+  .paragraph{
+    width: 40%;
+    padding: 20px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+  }
+
+  .side2side{
+    display:flex;
+  }
+  .numtwo {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 12em 14em 16em 16em;
+    margin-bottom: 15px;
+    padding-top: 1.5em;
+}
+
+.banner {
+  width: 100%;
+  height: 26em;
+  background: url(/img/tipsymoscow.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+}
+
+.b2{
+  background: url(/img/beverage-citrus-close-up-1265910.jpg);
+  background-position:center;
+  background-size:cover;
+  background-attachment: fixed;
+  margin-top:1em;
+  padding:2em 0;
+}
+.b3{
+  background: url(/img/beverage-bubble-citrus-357577.jpg);
+  background-position:center;
+  background-size:cover;
+  background-attachment: fixed;
+  height:35vh;
+}
+
+.b4{
+  background: url(/img/beverage-bubble-citrus-357577.jpg);
+  background-position:center;
+  background-size:cover;
+  background-attachment: fixed;
+  height:35vh;
+  
+}
 }
 
 @media screen and (max-width:900px){
-  html{
-    background-color:rgb(235, 235, 235);
-    text-rendering: optimizeLegibility;
-    font-family: 'Raleway', sans-serif;
   
-    font-size:15px;
-    font-weight:300;
-    overflow-x: hidden;
-  }
   
   body{
     max-width:900px;
@@ -848,18 +917,29 @@ li p{
     margin: 0 auto;
     font-size: 1.1rem;
   }
+
+  .grid-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows:12em 14em 16em 16em 16em 16em;
+  }
+
+  .numtwo {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 12em 14em 16em 16em;
+    margin-bottom: 15px;
+    padding-top: 1.5em;
+  }
+  .svg {
+    width: 11%;
+    height: auto;
+    margin: 0 1em;
+  }
 }
 
 @media screen and (max-width:767px){
-  html{
-    background-color:rgb(235, 235, 235);
-    text-rendering: optimizeLegibility;
-    font-family: 'Raleway', sans-serif;
   
-    font-size:15px;
-    font-weight:300;
-    overflow-x: hidden;
-  }
   
   body{
     max-width:767px;
@@ -883,7 +963,12 @@ li p{
     font-size: 1.1rem;
   }
 
-  
+  .svg {
+    width: 15%;
+    height: auto;
+    margin: 0 1em;
+  }
+
 }
 
 @media screen and (max-width:480px){
@@ -895,9 +980,9 @@ li p{
   }
   
   html{
-    background-color:rgb(235, 235, 235);
+    background-color:#fefefe;
     text-rendering: optimizeLegibility;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size:15px;
     font-weight:300;
     overflow-x: hidden;
@@ -910,7 +995,7 @@ li p{
   }
   
   h1{
-    font-size:350%;
+    font-size:300%;
     line-height:.9em;
   }
   
@@ -1012,7 +1097,7 @@ li p{
   }
   
   .svg{
-    width:8%;
+    width:18%;
     height:auto;
     margin:0 1em;
   }
@@ -1021,7 +1106,7 @@ li p{
     position:absolute;
     width:100%;
     left:50%;
-    top:40%;
+    top:45%;
     transform: translate(-50%, -50%);
     color:aliceblue;
     text-align: center;
@@ -1031,7 +1116,7 @@ li p{
   
   .hero-text-box h2{
     font-family:"comfortaa", cursive;
-    padding-bottom:15px;
+    
   }
   
   .hero-text-box h4{
@@ -1083,7 +1168,7 @@ li p{
   
   .story h2{
     font-family:'Yellowtail', cursive;
-    font-size:3.5rem;
+    font-size:3rem;
     text-shadow: -1px 0 #FE9C96, 0 3.5px #FE9C96, 2.5px 0 #FE9C96, 0 -1px #FE9C96;
   }
   
@@ -1325,7 +1410,7 @@ li p{
   .sone .paragraph{
     width: auto;
     padding: 10px 40px;
-    font-size: 1.25rem;
+    
     position: relative;
     top: 20%;
     color: white;
@@ -1552,7 +1637,9 @@ li p{
     margin-top: 1.5em;
   }
   
-  
+  .side2side{
+    display:block;
+  }
   
   .howedo{
     margin-top:2em;
