@@ -9,7 +9,7 @@ html{
   background-color:#fefefe;
   text-rendering: optimizeLegibility;
   font-family: 'Poppins', sans-serif;
-  font-size:15px;
+  font-size:16px;
   font-weight:300;
   overflow-x: hidden;
 }
@@ -52,7 +52,7 @@ h2{
 }
 
 .header{
-  height:78vh;
+  height:88vh;
   background-image:linear-gradient(rgba(37, 37, 37, 0.288), rgba(37, 37, 37, 0.068)),url(/img/tipsyparty.jpg);
   position:relative;
   background-position: center;
@@ -200,6 +200,7 @@ h2{
 
 .story h4{
   color:#FE9C96;
+  font-family: "comfortaa", cursive;
 }
 
 
@@ -807,6 +808,18 @@ li p{
     background-attachment: fixed;
   }
 
+  .hero-text-box{
+    position:absolute;
+    width:100%;
+    left:50%;
+    top:45%;
+    transform: translate(-50%, -50%);
+    color:aliceblue;
+    text-align: center;
+    font-size: 2.25rem;
+    display:inline-block;
+  }
+
   .grid-container{
     display: grid;
     grid-template-columns: auto auto;
@@ -843,7 +856,7 @@ li p{
     width: 40%;
     padding: 20px;
     margin: 0 auto;
-    font-size: 1.1rem;
+    font-size: 1.25rem;
   }
 
   .side2side{
@@ -891,6 +904,29 @@ li p{
   height:35vh;
   
 }
+.subtitle {
+  font-family: 'Comfortaa', cursive;
+  font-size: 1.5rem;
+  color: rgb(155, 231, 62);
+  padding-top: 3em;
+  text-align: center;
+}
+
+.testtwo {
+  padding: 1em;
+  border: 1.5px solid #FE9C96;
+  margin: 1em auto;
+  border-radius: 6px;
+  max-width: 625px;
+  color: aliceblue;
+}
+
+.testtwo p {
+  font-size: 1rem;
+  padding-bottom: .8em;
+  color: aliceblue;
+}
+
 }
 
 @media screen and (max-width:900px){
@@ -936,6 +972,12 @@ li p{
     height: auto;
     margin: 0 1em;
   }
+
+  .testtwo p {
+    font-size: .85rem;
+    padding-bottom: .8em;
+    color: aliceblue;
+}
 }
 
 @media screen and (max-width:767px){
@@ -969,6 +1011,15 @@ li p{
     margin: 0 1em;
   }
 
+  .testtwo {
+    padding: 1em;
+    border: 1.5px solid #FE9C96;
+    margin: 1em auto;
+    border-radius: 6px;
+    max-width: 425px;
+    color: aliceblue;
+}
+
 }
 
 @media screen and (max-width:480px){
@@ -983,7 +1034,7 @@ li p{
     background-color:#fefefe;
     text-rendering: optimizeLegibility;
     font-family: 'Poppins', sans-serif;
-    font-size:15px;
+    font-size:16px;
     font-weight:300;
     overflow-x: hidden;
   }
@@ -1026,7 +1077,7 @@ li p{
   }
   
   .header{
-    height:78vh;
+    height:88vh;
     background-image:linear-gradient(rgba(37, 37, 37, 0.288), rgba(37, 37, 37, 0.068)),url(/img/tipsyparty.jpg);
     position:relative;
     background-position: center;
@@ -1145,7 +1196,7 @@ li p{
   
   .subtitle{
     font-family: 'Comfortaa', cursive;
-    font-size:1rem;
+    font-size:1.2rem;
     color:rgb(155, 231, 62);
     
     padding-top:3em;
