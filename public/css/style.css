@@ -26,11 +26,11 @@ h1{
 }
 
 h3{
-  font-family: 'Yellowtail', cursive;
+  font-family: 'lobster', cursive;
 }
 
 h2{
-  font-family: 'Yellowtail', cursive;
+  font-family: 'lobster', cursive;
 }
 
 #logo img{
@@ -52,7 +52,7 @@ h2{
 }
 
 .header{
-  height:88vh;
+  height:100vh;
   background-image:linear-gradient(rgba(37, 37, 37, 0.288), rgba(37, 37, 37, 0.068)),url(/img/tipsyparty.jpg);
   position:relative;
   background-position: center;
@@ -141,8 +141,9 @@ h2{
 }
 
 .hero-text-box h2{
-  font-family:"comfortaa", cursive;
-  
+  font-family:"Lobster", cursive;
+  font-size: 4em;
+  text-shadow: -1px 0 #FE9C96, 0 3.5px #FE9C96, 2.5px 0 #FE9C96, 0 -1px #FE9C96;
 }
 
 .hero-text-box h4{
@@ -164,7 +165,7 @@ h2{
   font-family: 'Comfortaa', cursive;
   text-align: center;
   color:rgb(71, 162, 223);
-  padding-top:3em;  
+    
   text-shadow: -1px 0 #FE9C96, 0 1px #FE9C96, 2px 0 #FE9C96, 0 -1px #FE9C96;
   
 }
@@ -172,8 +173,7 @@ h2{
 .subtitle{
   font-family: 'Comfortaa', cursive;
   font-size:1rem;
-  color:rgb(155, 231, 62);
-  
+  color:rgb(155, 231, 62);  
   padding-top:3em;
   text-align: center;
   
@@ -193,8 +193,8 @@ h2{
 }
 
 .story h2{
-  font-family:'Yellowtail', cursive;
-  font-size:3rem;
+  font-family:'lobster', cursive;
+  font-size:5rem;
   text-shadow: -1px 0 #FE9C96, 0 3.5px #FE9C96, 2.5px 0 #FE9C96, 0 -1px #FE9C96;
 }
 
@@ -370,7 +370,7 @@ footer{
   height:auto;
   background: rgb(45, 161, 228);
   padding:20px 0;
-  
+  position: relative;
 }
 
 .con{
@@ -400,6 +400,7 @@ footer{
   animation-iteration-count: infinite;
   animation-timing-function:ease-in-out;  
   margin-top:5px;
+  text-align: center;
 }
 
 @keyframes float {
@@ -416,10 +417,16 @@ footer{
 }
 
 
+
+.paragraph-container{
+  padding: 5em 0;
+}
+
 .paragraph{
   width:100%;
   padding:20px;
   font-size:1.1rem;
+  color: rgb(43, 43, 43);
 }
 
 .inline{
@@ -435,10 +442,12 @@ footer{
 }
 
 .sone .paragraph{
-  width: auto;
+  width: 50%;
   padding: 10px 40px;
   position: relative;
   top: 20%;
+  left:8%;
+  margin: 0;
   color: white;
 }
 
@@ -486,11 +495,10 @@ width:100%;
 }
 
 .b2{
-  background: url(/img/beverage-citrus-close-up-1265910.jpg);
+  background:linear-gradient(rgba(37, 37, 37, 0.288), rgba(37, 37, 37, 0.068)), url(/img/beverage-citrus-close-up-1265910.jpg);
   background-position:center;
   background-size:cover;
   background-attachment: fixed;
-  margin-top:1em;
   padding:2em 0;
 }
 
@@ -515,6 +523,7 @@ width:100%;
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows:100px 100px 125px 125px 125px 125px;
+  padding-top: 3em;
 }
 
 .numtwo{
@@ -615,8 +624,7 @@ width:100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 4em;
-  
+  padding-bottom: 4em;
 }
 
 .divide-box{
@@ -664,9 +672,8 @@ width:100%;
 }
 
 
-
-.howedo{
-  margin-top:2em;
+.howwedo .paragraph{
+  width: 60%;
 }
 
 .paint p{
@@ -675,6 +682,7 @@ width:100%;
 
 .paint{
   background:rgb(71, 162, 223);
+  padding-bottom: 3em;
 }
 
 .testtwo p{
@@ -712,7 +720,7 @@ width:100%;
 }
 
 .test{
-  padding:1.5em;
+  padding:1.5em 7em;
   background-image:linear-gradient(rgba(20, 20, 20, 0.575), rgba(20, 20, 20, 0.575)),url(/img/tipsyparty.jpg);
   background-position: center;
   background-size:cover;  
@@ -779,7 +787,7 @@ li p{
 /*--- page two ---*/
 
 .client-list{
-  height:100vh;
+  height:100%;
   background-image:linear-gradient(rgba(71, 71, 71, 0.918), rgba(0, 0, 0, 0.39)),url(/img/tipsyparty.jpg);
   position:relative;
   background-position: center;
@@ -799,9 +807,45 @@ li p{
     overflow-x: hidden;
   }
 
+  .navbar {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    position: relative;
+    padding: 0 15px;
+    padding-right: 2em;
+    z-index: +1;
+    min-height: 8vh;
+    background: linear-gradient(rgba(71, 71, 71, 0.89), rgba(0, 0, 0, 0));
+    font-size: 1rem;
+    transform: translateY(-25px);
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 44%;
+    position: absolute;
+    right: 0px;
+    height: auto;
+    top: 3vh;
+    padding-top: 2em;
+    background-color: rgba(44, 143, 209, 0);
+    transform: translateX(0%);
+    transition: transform 0.5s ease-in;
+  }
+  
+  .burger {
+    display: none;
+    z-index: +2;
+  }
+
   .header{
-    height:88vh;
-    background-image:linear-gradient(rgba(37, 37, 37, 0.288), rgba(37, 37, 37, 0.068)),url(/img/tipsyparty.jpg);
+    height:100vh;
+    background-image:linear-gradient(rgba(37, 37, 37, 0.459), rgba(37, 37, 37, 0.397)),url(/img/tipsyparty.jpg);
     position:relative;
     background-position: center;
     background-size:cover;
@@ -816,7 +860,6 @@ li p{
     transform: translate(-50%, -50%);
     color:aliceblue;
     text-align: center;
-    font-size: 2.25rem;
     display:inline-block;
   }
 
@@ -824,6 +867,18 @@ li p{
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows:14em 14em 18em 18em 18em 18em;
+    padding-top: 3em;
+  }
+
+  .pc-2{
+    position: relative;
+    max-width:40%;
+    left: 5%;
+  }
+
+  .pc-2 .title{
+    color: white;
+    text-shadow: none;
   }
 
   .b3{
@@ -853,10 +908,14 @@ li p{
   }
 
   .paragraph{
-    width: 40%;
+    width: 65%;
     padding: 20px;
     margin: 0 auto;
     font-size: 1.25rem;
+  }
+
+  .howwedo.paragraph{
+    width: 60%;
   }
 
   .side2side{
@@ -870,62 +929,62 @@ li p{
     padding-top: 1.5em;
 }
 
-.banner {
-  width: 100%;
-  height: 26em;
-  background: url(/img/tipsymoscow.jpg);
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  background-attachment: fixed;
-}
+  .banner {
+    width: 100%;
+    height: 30em;
+    background: url(/img/tipsymoscow.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+  }
 
-.b2{
-  background: url(/img/beverage-citrus-close-up-1265910.jpg);
-  background-position:center;
-  background-size:cover;
-  background-attachment: fixed;
-  margin-top:1em;
-  padding:2em 0;
-}
-.b3{
-  background: url(/img/beverage-bubble-citrus-357577.jpg);
-  background-position:center;
-  background-size:cover;
-  background-attachment: fixed;
-  height:35vh;
-}
+  .b2{
+    background:linear-gradient(rgba(37, 37, 37, 0.623), rgba(37, 37, 37, 0.568)), url(/img/beverage-citrus-close-up-1265910.jpg);
+    background-position:center;
+    background-size:cover;
+    background-attachment: fixed;    
+    padding:2em 0;
+  }
 
-.b4{
-  background: url(/img/beverage-bubble-citrus-357577.jpg);
-  background-position:center;
-  background-size:cover;
-  background-attachment: fixed;
-  height:35vh;
-  
-}
-.subtitle {
-  font-family: 'Comfortaa', cursive;
-  font-size: 1.5rem;
-  color: rgb(155, 231, 62);
-  padding-top: 3em;
-  text-align: center;
-}
+  .b3{
+    background: url(/img/beverage-bubble-citrus-357577.jpg);
+    background-position:center;
+    background-size:cover;
+    background-attachment: fixed;
+    height:35vh;
+  }
 
-.testtwo {
-  padding: 1em;
-  border: 1.5px solid #FE9C96;
-  margin: 1em auto;
-  border-radius: 6px;
-  max-width: 625px;
-  color: aliceblue;
-}
+  .b4{
+    background: url(/img/beverage-bubble-citrus-357577.jpg);
+    background-position:center;
+    background-size:cover;
+    background-attachment: fixed;
+    height:35vh;
+    
+  }
+  .subtitle {
+    font-family: 'Comfortaa', cursive;
+    font-size: 1.5rem;
+    color: rgb(155, 231, 62);
+    padding-top: 3em;
+    text-align: center;
+  }
 
-.testtwo p {
-  font-size: 1rem;
-  padding-bottom: .8em;
-  color: aliceblue;
-}
+  .testtwo {
+    padding: 1em;
+    border: 1.5px solid #FE9C96;
+    margin: 1em auto;
+    border-radius: 6px;
+    max-width: 625px;
+    color: aliceblue;
+  }
+
+  .testtwo p {
+    font-size: 1rem;
+    padding-bottom: .8em;
+    color: aliceblue;
+  }
 
 }
 
@@ -1007,7 +1066,7 @@ li p{
   }
 
   .header{
-    height:100%;
+    height: 100vh;
     background-image:linear-gradient(rgba(37, 37, 37, 0.288), rgba(37, 37, 37, 0.068)),url(/img/tipsyparty.jpg);
     position:relative;
     background-position: center;
@@ -1021,6 +1080,12 @@ li p{
     margin: 0 auto;
     font-size: 1.1rem;
   }
+
+  .pc-2 {
+    position: relative;
+    max-width: 90%;
+    
+}
 
   .svg {
     width: 15%;
@@ -1063,16 +1128,16 @@ li p{
   }
   
   h1{
-    font-size:300%;
+    font-size:250%;
     line-height:.9em;
   }
   
   h3{
-    font-family: 'Yellowtail', cursive;
+    font-family: 'lobster', cursive;
   }
   
   h2{
-    font-family: 'Yellowtail', cursive;
+    font-family: 'lobster', cursive;
   }
   
   #logo img{
@@ -1094,7 +1159,7 @@ li p{
   }
   
   .header{
-    height:88vh;
+    height:100vh;
     background-image:linear-gradient(rgba(37, 37, 37, 0.288), rgba(37, 37, 37, 0.068)),url(/img/tipsyparty.jpg);
     position:relative;
     background-position: center;
@@ -1183,8 +1248,9 @@ li p{
   }
   
   .hero-text-box h2{
-    font-family:"comfortaa", cursive;
-    
+    font-family:"Lobster", cursive;
+    font-size: 2.5rem;
+    text-shadow: -1px 0 #FE9C96, 0 3.5px #FE9C96, 2.5px 0 #FE9C96, 0 -1px #FE9C96;
   }
   
   .hero-text-box h4{
@@ -1206,7 +1272,7 @@ li p{
     font-family: 'Comfortaa', cursive;
     text-align: center;
     color:rgb(71, 162, 223);
-    padding-top:3em;  
+      
     text-shadow: -1px 0 #FE9C96, 0 1px #FE9C96, 2px 0 #FE9C96, 0 -1px #FE9C96;
     
   }
@@ -1235,8 +1301,8 @@ li p{
   }
   
   .story h2{
-    font-family:'Yellowtail', cursive;
-    font-size:3rem;
+    font-family:'lobster', cursive;
+    font-size:2.5rem;
     text-shadow: -1px 0 #FE9C96, 0 3.5px #FE9C96, 2.5px 0 #FE9C96, 0 -1px #FE9C96;
   }
   
@@ -1456,6 +1522,15 @@ li p{
     
   }
   
+  .paragraph-container {
+    padding: 3em 0;
+  }
+
+  .pc-2 {
+    position: relative;
+    max-width:90%;
+    
+  }
   
   .paragraph{
     width:100%;
@@ -1475,14 +1550,14 @@ li p{
     color:white;
   }
   
-  .sone .paragraph{
+  .sone .paragraph {
     width: auto;
     padding: 10px 40px;
-    
     position: relative;
-    top: 20%;
+    top: 4%;
+    left: 0;
     color: white;
-  }
+}
   
   .spacer{
   height: 75px;
@@ -1528,11 +1603,11 @@ li p{
   }
   
   .b2{
-    background: url(/img/beverage-citrus-close-up-1265910.jpg);
+    background:linear-gradient(rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.521)), url(/img/beverage-citrus-close-up-1265910.jpg);
     background-position:center;
     background-size:cover;
     background-attachment: fixed;
-    margin-top:1em;
+    height:auto;
     padding:2em 0;
   }
   
@@ -1562,7 +1637,7 @@ li p{
   .numtwo{
     display: grid;
     grid-template-columns: auto auto;
-    grid-template-rows:100px 100px 125px 125px;
+    grid-template-rows:160px 100px 125px 125px;
     margin-bottom:15px;
     padding-top:1.5em;
   }
@@ -1657,8 +1732,7 @@ li p{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 4em;
-    
+    padding-bottom: 4em;
   }
   
   .divide-box{
@@ -1709,9 +1783,6 @@ li p{
     display:block;
   }
   
-  .howedo{
-    margin-top:2em;
-  }
   
   .paint p{
     color:aliceblue;
@@ -1719,6 +1790,7 @@ li p{
   
   .paint{
     background:rgb(71, 162, 223);
+    padding-bottom: 1em;
   }
   
   .testtwo p{
@@ -1823,21 +1895,48 @@ li p{
   /*--- page two ---*/
   
   .client-list{
-    height:100vh;
+    height:100%;
     background-image:linear-gradient(rgba(71, 71, 71, 0.918), rgba(0, 0, 0, 0.39)),url(/img/tipsyparty.jpg);
     position:relative;
     background-position: center;
     background-size:cover;
     background-attachment: fixed;
+    text-align: center;
   }
 }
 
+.jsquare{
+  width: 60%;
+  margin: 4em auto;
+  padding: 1em;
+  background: rgba(245, 245, 245, 0.726);
+  border-radius: 6px;
+  display: inline-block;
+}
 
+.jsquare h2{
+  margin-bottom: .75em;
+}
 
+.square h2{
+  margin-bottom: .75em;
+}
 
+.square{
+  width: 60%;
+  margin: 4em auto;
+  padding: 1em;
+  background: rgba(245, 245, 245, 0.726);
+  border-radius: 6px;
+}
 
-
-
-
-
-
+.btnbtn a {
+  text-decoration: none;
+  padding: 7px;
+  background: linear-gradient(45deg, rgb(111, 169, 235), #86D12C);
+  color: whitesmoke;  
+  border-radius:6px;
+  font-size: 1rem;
+  display: inline-block;
+  margin-top:1em;
+}
