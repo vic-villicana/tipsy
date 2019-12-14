@@ -523,7 +523,7 @@ width:100%;
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows:100px 100px 125px 125px 125px 125px;
-  padding-top: 3em;
+  
 }
 
 .numtwo{
@@ -867,7 +867,7 @@ li p{
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows:14em 14em 18em 18em 18em 18em;
-    padding-top: 3em;
+   
   }
 
   .pc-2{
@@ -1631,7 +1631,7 @@ li p{
   .grid-container{
     display: grid;
     grid-template-columns: auto auto;
-    grid-template-rows:100px 100px 125px 125px 125px 125px;
+    grid-template-rows:  125px 125px;
   }
   
   .numtwo{
@@ -1643,32 +1643,30 @@ li p{
   }
   
   .gone{
-    grid-column: 1 / span 2;
-    grid-row:1 / span 2;
+    position: relative;
+    height: 200px;
+    width: 100%;
     background: url(/img/adults-alcohol-alcoholic-beverage-1304473.jpg);
     background-size:cover;
     background-position: center;
   }
   
   .gtwo{
-    grid-column: 1 ;
-    grid-row:3 / span 2;
+    
     background: url(/img/beverage-citrus-close-up-1265910.jpg);
     background-size:cover;
     background-position: center;
   }
   
   .gthree{
-    grid-column: 2 ;
-    grid-row:3 / span 1;
+    
     background: url(/img/beverage-bubble-citrus-357577.jpg);
     background-size:cover;
     background-position: center;
   }
   
   .gfour{
-    grid-column: 2 ;
-    grid-row:4 / span 1;
+    
     background: url(/img/bottle-celebration-crowd-948199.jpg);
     background-size:cover;
     background-position: center;
@@ -1676,7 +1674,7 @@ li p{
   
   .gfive{
     grid-column: 2 ;
-    grid-row:5 / span 2;
+    grid-row:1 / span 2;
     background: url(/img/adult-alcoholic-beverage-bar.jpg);
     background-size:cover;
     background-position: center;
@@ -1684,7 +1682,7 @@ li p{
   
   .gsix{
     grid-column: 1 ;
-    grid-row:6 / span 1;
+    grid-row:1 / span 1;
     background: url(/img/alcohol-alcoholic-beverage-bar.jpg);
     background-size:cover;
     background-position: center;
@@ -1692,7 +1690,7 @@ li p{
   
   .gseven{
     grid-column: 1 ;
-    grid-row:5 / span 1;
+    grid-row:2 / span 1;
     background:url(/img/adult-alcohol-alcoholic-beverage.jpg);
     background-size:cover;
     background-position: center;
