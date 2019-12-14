@@ -164,10 +164,7 @@ h2{
 .title{
   font-family: 'Comfortaa', cursive;
   text-align: center;
-  color:rgb(71, 162, 223);
-    
-  text-shadow: -1px 0 #FE9C96, 0 1px #FE9C96, 2px 0 #FE9C96, 0 -1px #FE9C96;
-  
+  color:rgb(71, 162, 223); 
 }
 
 .subtitle{
@@ -1271,10 +1268,7 @@ li p{
   .title{
     font-family: 'Comfortaa', cursive;
     text-align: center;
-    color:rgb(71, 162, 223);
-      
-    text-shadow: -1px 0 #FE9C96, 0 1px #FE9C96, 2px 0 #FE9C96, 0 -1px #FE9C96;
-    
+    color:rgb(71, 162, 223);    
   }
   
   .subtitle{
@@ -1627,6 +1621,62 @@ li p{
     height:35vh;
     
   }
+
+  .slide-container-container{
+    position: relative;
+  }
+
+  .slide-container{
+    position: relative;
+    width: 100%;
+    height: 13em;
+    overflow: hidden;
+  }
+
+  .slide{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: opacity .5s ease-in-out;
+  }
+
+  .slide.current{
+    opacity: 1;
+  }
+
+  .slide:first-child{
+    background: url(/img/alcohol-bar-beer-989711.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .slide:nth-child(2){
+    background:url(/img/alcohol-alcoholic-beverage-bar.jpg) ;
+    background-position: center;
+    background-size:cover;
+  }
+
+  .slide:nth-child(3){
+    background: url(img/adults-alcohol-alcoholic-beverage-1304473.jpg);
+  }
+
+  .buttons{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 1;
+    width:100%;
+    transform: translate(0, -50%);
+    top: 50%;
+  }
+
+  .bbtn{
+    cursor: pointer;
+  }
   
   .grid-container{
     display: grid;
@@ -1753,6 +1803,7 @@ li p{
     margin-top:1em;
   }
   
+
   
   .divide-box h3{
     font-size:1.75rem;
