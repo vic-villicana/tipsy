@@ -477,6 +477,68 @@ width:100%;
 
 }
 
+/*---slider---*/
+/*---slider---*/
+/*---slider---*/
+
+.slide-container-container{
+  position: relative;
+}
+
+.slide-container{
+  position: relative;
+  width: 100%;
+  height:28em;
+  overflow: hidden;
+}
+
+.slide{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: opacity .5s ease-in-out;
+}
+
+.slide.current{
+  opacity: 1;
+}
+
+.slide:first-child{
+  background: url(/img/alcohol-bar-beer-989711.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.slide:nth-child(2){
+  background:url(/img/alcohol-alcoholic-beverage-bar.jpg) ;
+  background-position: center;
+  background-size:cover;
+}
+
+.slide:nth-child(3){
+  background: url(/img/adults-alcohol-alcoholic-beverage-1304473.jpg);
+  background-position: center;
+  background-size:cover;
+}
+
+.buttons{
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  z-index: 1;
+  width:100%;
+  transform: translate(0, -50%);
+  top: 50%;
+}
+
+.bbtn{
+  cursor: pointer;
+}
+
 /*---one offs---*/
 /*---one offs---*/
 /*---one offs---*/
@@ -528,20 +590,21 @@ width:100%;
   grid-template-columns: auto auto;
   grid-template-rows:100px 100px 125px 125px;
   margin-bottom:15px;
-  padding-top:1.5em;
+  
 }
 
-.gone{
-  grid-column: 1 / span 2;
-  grid-row:1 / span 2;
+.gone {
+  position: relative;
+  height: 28em;
+  width: 100%;
   background: url(/img/adults-alcohol-alcoholic-beverage-1304473.jpg);
-  background-size:cover;
+  background-size: cover;
   background-position: center;
 }
 
 .gtwo{
   grid-column: 1 ;
-  grid-row:3 / span 2;
+  grid-row:1 / span 2;
   background: url(/img/beverage-citrus-close-up-1265910.jpg);
   background-size:cover;
   background-position: center;
@@ -549,7 +612,7 @@ width:100%;
 
 .gthree{
   grid-column: 2 ;
-  grid-row:3 / span 1;
+  grid-row:1 / span 1;
   background: url(/img/beverage-bubble-citrus-357577.jpg);
   background-size:cover;
   background-position: center;
@@ -557,33 +620,33 @@ width:100%;
 
 .gfour{
   grid-column: 2 ;
-  grid-row:4 / span 1;
+  grid-row:2 / span 1;
   background: url(/img/bottle-celebration-crowd-948199.jpg);
   background-size:cover;
   background-position: center;
 }
 
-.gfive{
-  grid-column: 2 ;
-  grid-row:5 / span 2;
+.gfive {
+  grid-column: 2;
+  grid-row: 1 / span 2;
   background: url(/img/adult-alcoholic-beverage-bar.jpg);
-  background-size:cover;
+  background-size: cover;
   background-position: center;
 }
 
-.gsix{
-  grid-column: 1 ;
-  grid-row:6 / span 1;
+.gsix {
+  grid-column: 1;
+  grid-row: 1 / span 1;
   background: url(/img/alcohol-alcoholic-beverage-bar.jpg);
-  background-size:cover;
+  background-size: cover;
   background-position: center;
 }
 
-.gseven{
-  grid-column: 1 ;
-  grid-row:5 / span 1;
-  background:url(/img/adult-alcohol-alcoholic-beverage.jpg);
-  background-size:cover;
+.gseven {
+  grid-column: 1;
+  grid-row: 2 / span 1;
+  background: url(/img/adult-alcohol-alcoholic-beverage.jpg);
+  background-size: cover;
   background-position: center;
 }
 
@@ -849,6 +912,15 @@ li p{
     background-attachment: fixed;
   }
 
+  .con {
+    height: 100%;
+    background-image: url(/img/tipsyparty.jpg);
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
   .hero-text-box{
     position:absolute;
     width:100%;
@@ -860,12 +932,11 @@ li p{
     display:inline-block;
   }
 
-  .grid-container{
+  .grid-container {
     display: grid;
     grid-template-columns: auto auto;
-    grid-template-rows:14em 14em 18em 18em 18em 18em;
-   
-  }
+    grid-template-rows: 25em 25em;
+}
 
   .pc-2{
     position: relative;
@@ -895,8 +966,19 @@ li p{
   .form {
     position: relative;
     margin: 0 auto;
-    width: 45%;
+    width: 75%;
   }
+
+  .contact {
+    height: auto;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.5);
+    background-position: center;
+    background-size: cover;
+    padding: 25px;
+    margin: 0 auto;
+    width: 50%;
+}
 
   .db2 {
     margin: 0 auto;
@@ -921,9 +1003,9 @@ li p{
   .numtwo {
     display: grid;
     grid-template-columns: auto auto;
-    grid-template-rows: 12em 14em 16em 16em;
+    grid-template-rows: 16em 16em;
     margin-bottom: 15px;
-    padding-top: 1.5em;
+    
 }
 
   .banner {
@@ -1021,7 +1103,7 @@ li p{
     grid-template-columns: auto auto;
     grid-template-rows: 12em 14em 16em 16em;
     margin-bottom: 15px;
-    padding-top: 1.5em;
+    
   }
   .svg {
     width: 11%;
@@ -1689,9 +1771,9 @@ li p{
   .numtwo{
     display: grid;
     grid-template-columns: auto auto;
-    grid-template-rows:160px 100px 125px 125px;
+    grid-template-rows: 125px 125px;
     margin-bottom:15px;
-    padding-top:1.5em;
+    
   }
   
   .gone{
