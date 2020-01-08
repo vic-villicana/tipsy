@@ -664,24 +664,21 @@ width:100%;
 }
 
 .gfive {
-  grid-column: 2;
-  grid-row: 1 / span 2;
+  grid-area: content-copy;
   background: url(/img/adult-alcoholic-beverage-bar.jpg);
   background-size: cover;
   background-position: center;
 }
 
 .gsix {
-  grid-column: 1;
-  grid-row: 1 / span 1;
+  grid-area:pic-one;
   background: url(/img/alcohol-alcoholic-beverage-bar.jpg);
   background-size: cover;
   background-position: center;
 }
 
 .gseven {
-  grid-column: 1;
-  grid-row: 2 / span 1;
+  grid-area:pic-two;
   background: url(/img/adult-alcohol-alcoholic-beverage.jpg);
   background-size: cover;
   background-position: center;
@@ -973,8 +970,11 @@ li p{
 
   .grid-container {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 25em 25em;
+    grid-template-areas:
+    "pic-one content-copy"
+    "pic-two content-copy"
 }
 
   .pc-2{
@@ -1140,7 +1140,7 @@ li p{
   .grid-container{
     display: grid;
     grid-template-columns: auto auto;
-    grid-template-rows:12em 14em 16em 16em 16em 16em;
+    grid-template-rows:12em 14em ;
   }
 
   .numtwo {
@@ -1821,9 +1821,10 @@ li p{
   }
   
   .grid-container{
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows:  125px 125px;
+    grid-template-areas:
+    "content-copy content-copy"
+    "pic-one pic-two";
+    grid-template-rows:  275px 140px;
   }
   
   .numtwo{
@@ -1864,29 +1865,7 @@ li p{
     background-position: center;
   }
   
-  .gfive{
-    grid-column: 2 ;
-    grid-row:1 / span 2;
-    background: url(/img/adult-alcoholic-beverage-bar.jpg);
-    background-size:cover;
-    background-position: center;
-  }
   
-  .gsix{
-    grid-column: 1 ;
-    grid-row:1 / span 1;
-    background: url(/img/alcohol-alcoholic-beverage-bar.jpg);
-    background-size:cover;
-    background-position: center;
-  }
-  
-  .gseven{
-    grid-column: 1 ;
-    grid-row:2 / span 1;
-    background:url(/img/adult-alcohol-alcoholic-beverage.jpg);
-    background-size:cover;
-    background-position: center;
-  }
   
   .sone{
     background:linear-gradient(rgba(37, 37, 37, 0.808), rgba(0, 0, 0, 0)),url(/img/alcohol-bar-beer-989711.jpg);
