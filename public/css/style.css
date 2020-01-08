@@ -93,6 +93,18 @@ h2{
   
 }
 
+@keyframes navLinkFade{
+  from{
+    opacity: 0;      
+    transform: translateX(50px);
+  }
+
+  to{
+    opacity: 1;      
+    transform: translateX(0px);
+  }
+}
+
 .burger{
   display:block;
   z-index: +2;
@@ -104,6 +116,18 @@ h2{
   height:2px;
   background-color:white;
   margin:5px;
+}
+
+.toggle .line1{
+ transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2{
+  opacity: 0;
+}
+
+.toggle .line3{
+  transform: rotate(45deg) translate(-5px, -6px);
 }
 
 .nav-active{
@@ -261,6 +285,19 @@ h2{
 /*--- contact---*/
 /*--- contact---*/
 /*--- contact---*/
+.error{
+  color: rgb(221, 54, 54);
+  padding: .5em;
+}
+
+.error li{
+  list-style: none;
+}
+
+#messages{
+  background: rgb(179, 184, 189);
+}
+
 .contact{
   height: auto;
   position: relative;
@@ -898,6 +935,8 @@ li p{
     transition: transform 0.5s ease-in;
   }
   
+  
+
   .burger {
     display: none;
     z-index: +2;
@@ -966,7 +1005,13 @@ li p{
   .form {
     position: relative;
     margin: 0 auto;
-    width: 75%;
+    width: 80%;
+  }
+
+  .form-main {
+    position: relative;
+    margin: 0 auto;
+    width: 30%;
   }
 
   .contact {
@@ -977,7 +1022,7 @@ li p{
     background-size: cover;
     padding: 25px;
     margin: 0 auto;
-    width: 50%;
+    width: 35%;
 }
 
   .db2 {
@@ -1246,6 +1291,17 @@ li p{
     background-attachment: fixed;
   }
   
+   .toggle .line1{
+    transform: rotate(-45deg) translate(-5px, 4px);
+   }
+   
+   .toggle .line2{
+     opacity: 0;
+   }
+   
+   .toggle .line3{
+     transform: rotate(45deg) translate(-5px, -5px);
+   }
   
   .navbar{
     justify-content:space-between;
@@ -1275,7 +1331,7 @@ li p{
     padding-top:2em;   
     background-color:rgba(44, 143, 209, 0.705);;
     transform: translateX(100%);
-    transition:transform 0.5s ease-in;
+    transition:transform 0.35s ease-in;
     
   }
   
@@ -1290,6 +1346,7 @@ li p{
     height:2px;
     background-color:white;
     margin:5px;
+    transition: all 0.3s ease;
   }
   
   .nav-active{
@@ -1304,6 +1361,20 @@ li p{
     
   }
   
+  @keyframes navLinkFade{
+    from{
+      opacity: 0;      
+      transform: translateX(50px);
+    }
+
+    to{
+      opacity: 1;      
+      transform: translateX(0px);
+    }
+  }
+
+
+
   .navbar a:hover{
     color:rgba(26, 243, 55, 0.938);
   }
@@ -1454,7 +1525,8 @@ li p{
     background-position: center;
     background-size: cover;
     padding: 25px;
-    margin: 0 15px;
+    margin: 0 auto;
+    width: 80%;
   }
   
   .contact-form{
@@ -1501,20 +1573,6 @@ li p{
     border-bottom:1px solid rgb(107, 107, 219);
   }
   
-  select{
-    width:90%;
-    margin:40px 0;
-    background:rgba(0, 0, 0, 0);
-    border:none;
-    border-bottom:1px solid rgb(107, 107, 219);
-   }
-  
-  .form select{
-    font-size:1rem;
-    font-family:"comfortaa", cursive;
-    color:black;
-    background-color: rgba(255, 255, 255, 0);
-  }
   
   ::placeholder{
     color:black;
@@ -2040,12 +2098,13 @@ li p{
 }
 
 .jsquare{
+  position: relative;
   width: 60%;
   margin: 4em auto;
   padding: 1em;
   background: rgba(245, 245, 245, 0.726);
   border-radius: 6px;
-  display: inline-block;
+  
 }
 
 .jsquare h2{
