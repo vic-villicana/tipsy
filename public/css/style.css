@@ -25,12 +25,11 @@ h1{
   line-height:.9em;
 }
 
-h3{
-  font-family: 'lobster', cursive;
-}
+
 
 h2{
-  font-family: 'lobster', cursive;
+  font-family: 'montserrat', cursive;
+    font-size: 3em;
 }
 
 #logo img{
@@ -164,10 +163,11 @@ h2{
   display:inline-block;
 }
 
-.hero-text-box h2{
+.hero-text-box h1{
   font-family:"Lobster", cursive;
   font-size: 4em;
   text-shadow: -1px 0 #FE9C96, 0 3.5px #FE9C96, 2.5px 0 #FE9C96, 0 -1px #FE9C96;
+  line-height:1.2em ;
 }
 
 .hero-text-box h4{
@@ -186,9 +186,9 @@ h2{
 
 
 .title{
-  font-family: 'Comfortaa', cursive;
+  font-family: 'montserrat', cursive;
   text-align: center;
-  color:rgb(71, 162, 223); 
+  color: rgb(107, 107, 219); 
 }
 
 .subtitle{
@@ -200,24 +200,21 @@ h2{
   
 }
 
-.subtitle h2{
+.subtitle h3{
   font-family:'Comfortaa', cursive;
   white-space: nowrap;
   width:100%;
   overflow: auto;
   margin:0 auto;
   font-weight:bold;
+  font-size: 1.5em;
 }
 
 .index h1{
   color:rgb(27, 27, 27);
 }
 
-.story h2{
-  font-family:'lobster', cursive;
-  font-size:5rem;
-  text-shadow: -1px 0 #FE9C96, 0 3.5px #FE9C96, 2.5px 0 #FE9C96, 0 -1px #FE9C96;
-}
+
 
 .story h4{
   color:#FE9C96;
@@ -316,7 +313,7 @@ h2{
         
 }
 
-.contact-form h1{
+.contact-form h3{
   margin:0;
   font-size:2rem;
   
@@ -424,6 +421,10 @@ footer{
   text-align: center;
   position:relative;
   }
+
+.footer h5{
+  font-family: "Lobster", sans-serif;
+}
 /*-- reusable components--*/
 /*-- reusable components--*/
 /*-- reusable components--*/
@@ -454,6 +455,23 @@ footer{
 
 .paragraph-container{
   padding: 5em 0;
+  
+}
+
+.pc-events{
+  padding: 8em 0;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.863), rgba(255, 255, 255, 0.76)), url(/img/city-buildings-and-trees-during-golden-hour.jpg);
+  background-position-y:center;
+  background-size:cover;
+}
+
+.pc-mission{
+
+}
+
+.pc-mission p{
+  
+  
 }
 
 .paragraph{
@@ -473,6 +491,7 @@ footer{
   padding:20px;
   font-size:1.25rem;
   color:white;
+  margin-bottom: 1em;
 }
 
 .sone .paragraph{
@@ -759,6 +778,7 @@ width:100%;
 .divide-boxtwo a{
   text-decoration: none;
   color: rgb(111, 169, 235);
+  font-family: "Lobster", sans-serif;
 }
 
 .dbtwo{
@@ -785,7 +805,7 @@ width:100%;
   color:aliceblue;  
 }
 
-.testtwo h2{
+.testtwo h4{
   width:95%;
   text-align: right;
   color:rgb(212, 231, 35);
@@ -806,7 +826,7 @@ width:100%;
   padding-bottom:.8em;
 }
 
-.test h2{
+.test h3{
   width:95%;
   text-align: right;
   color:rgb(212, 231, 35);
@@ -824,20 +844,21 @@ width:100%;
 
 
 
-.test-two h2{
+.test-two h3{
   text-align:left;
   color:#FE9C96;
   padding-bottom:1rem;
+  font-size: 1.5rem;
 }
 
-.test-two h1{
+.test-two h2{
   font-size: 2.75rem;
   text-align:left;
   color:#FE9C96;
   padding:1rem 0;
 }
 
-.test-two-one h1{
+.test-two-one h2{
   text-align:right;
   font-size: 2.75rem;
   color:#FE9C96;
@@ -850,10 +871,11 @@ width:100%;
   background-size:cover;
 }
 
-.test-two-one h2{
+.test-two-one h3{
   text-align:right;
   width: 100%;
   padding-bottom:1rem;
+  font-size: 1.5rem;
 }
 
 .test-two ul {
@@ -981,6 +1003,9 @@ li p{
     position: relative;
     max-width:40%;
     left: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .pc-2 .title{
@@ -1258,17 +1283,23 @@ li p{
     overflow-x: hidden;
   }
   
+  .hero-text-box h1 {
+    
+    font-size: 2em;
+    
+  }
+
   h1{
     font-size:250%;
     line-height:.9em;
   }
   
   h3{
-    font-family: 'lobster', cursive;
+    
   }
   
   h2{
-    font-family: 'lobster', cursive;
+    font-size:2.5em;
   }
   
   #logo img{
@@ -1551,7 +1582,7 @@ li p{
   
   .contact-form p{
     margin:10px auto;
-    width:90%;
+    width:auto;
     font-size:1.2rem;
     font-weight:800;
     
@@ -2004,7 +2035,7 @@ li p{
     width:95%;
     text-align: right;
     color:rgb(212, 231, 35);
-    text-shadow: -1px 0 rgb(44, 143, 209), 0 3px rgb(44, 143, 209), 2px 0 rgb(44, 143, 209), 0 -1px rgb(44, 143, 209);
+    
   }
   
   .test{
