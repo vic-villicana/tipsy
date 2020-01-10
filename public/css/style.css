@@ -190,6 +190,10 @@ h2{
   text-align: center;
   color: rgb(107, 107, 219); 
 }
+.title h3{
+  font-size:2em;
+  padding-top:1em;
+}
 
 .subtitle{
   font-family: 'Comfortaa', cursive;
@@ -498,7 +502,6 @@ footer{
   width: 50%;
   padding: 10px 40px;
   position: relative;
-  top: 20%;
   left:8%;
   margin: 0;
   color: white;
@@ -707,6 +710,9 @@ width:100%;
   background:linear-gradient(rgba(37, 37, 37, 0.808), rgba(0, 0, 0, 0)),url(/img/alcohol-bar-beer-989711.jpg);
   background-size: cover;
   background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .stwo{
@@ -1201,8 +1207,8 @@ li p{
     width: 80%;
   }
 
-  .banner{
-    
+  .b5{
+    height: 22em;    
   }
 
 }
@@ -1785,12 +1791,12 @@ li p{
   
   .sone .paragraph {
     width: auto;
-    padding: 10px 40px;
+    padding: 20px 40px;
     position: relative;
     top: 4%;
     left: 0;
     color: white;
-}
+  }
   
   .spacer{
   height: 75px;
@@ -1923,7 +1929,7 @@ li p{
     grid-template-areas:
     "content-copy content-copy"
     "pic-one pic-two";
-    grid-template-rows:  275px 140px;
+    grid-template-rows:  350px 140px;
   }
   
   .numtwo{
