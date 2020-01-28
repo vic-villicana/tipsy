@@ -463,9 +463,9 @@ footer{
 }
 
 .pc-events{
-  padding: 8em 0;
+  padding: 4em 0;
   background-image: linear-gradient(rgba(8, 8, 8, 0.90), rgba(8, 8, 8, 0.90)), url(/img/city-buildings-and-trees-during-golden-hour.jpg);
-  background-position-y:center;
+  background-position-y:40%;
   background-size:cover;
 }
 
