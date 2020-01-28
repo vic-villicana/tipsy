@@ -52,7 +52,7 @@ h2{
 
 .header{
   height:100vh;
-  background-image:linear-gradient(rgba(37, 37, 37, 0.288), rgba(37, 37, 37, 0.068)),url(/img/tipsyparty.jpg);
+  background-image:linear-gradient(rgba(37, 37, 37, 0.288), rgba(37, 37, 37, 0.068)),url(/img/TipsyBar.jpg);
   position:relative;
   background-position: center;
   background-size:cover;
@@ -164,7 +164,7 @@ h2{
 }
 
 .hero-text-box h1{
-  font-family:"Lobster", cursive;
+  font-family:"lalezar", cursive;
   font-size: 4em;
   text-shadow: -1px 0 #FE9C96, 0 3.5px #FE9C96, 2.5px 0 #FE9C96, 0 -1px #FE9C96;
   line-height:1.2em ;
@@ -188,7 +188,7 @@ h2{
 .title{
   font-family: 'montserrat', cursive;
   text-align: center;
-  color: rgb(107, 107, 219); 
+  color: rgb(233, 233, 233); 
 }
 .title h3{
   font-size:2em;
@@ -464,7 +464,7 @@ footer{
 
 .pc-events{
   padding: 8em 0;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.863), rgba(255, 255, 255, 0.76)), url(/img/city-buildings-and-trees-during-golden-hour.jpg);
+  background-image: linear-gradient(rgba(8, 8, 8, 0.90), rgba(8, 8, 8, 0.90)), url(/img/city-buildings-and-trees-during-golden-hour.jpg);
   background-position-y:center;
   background-size:cover;
 }
@@ -482,7 +482,7 @@ footer{
   width:100%;
   padding:20px;
   font-size:1.1rem;
-  color: rgb(43, 43, 43);
+  color: rgb(233, 233, 233);
 }
 
 .inline{
@@ -654,9 +654,9 @@ width:100%;
 
 .gone {
   position: relative;
-  height: 28em;
+  height: 90vh;
   width: 100%;
-  background: url(/img/adults-alcohol-alcoholic-beverage-1304473.jpg);
+  background: url(/img/TipsyBar7.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -687,23 +687,54 @@ width:100%;
 
 .gfive {
   grid-area: content-copy;
-  background: url(/img/adult-alcoholic-beverage-bar.jpg);
+  background:linear-gradient(rgba(0, 0, 0, 0.705), rgba(0, 0, 0, 0.704)), url(/img/TipsyBar5.jpg);
   background-size: cover;
   background-position: center;
 }
 
 .gsix {
   grid-area:pic-one;
-  background: url(/img/alcohol-alcoholic-beverage-bar.jpg);
+  background: url(/img/TipsyBar4.jpg);
   background-size: cover;
   background-position: center;
+  padding:0em 6em;
+  position: relative;
+}
+
+.gsix-container{
+  padding: 2em 2em;
+  color:white;
+  background: rgba(0, 0, 0, 0.829);
+  position:relative;
+  transform: translate( 0, -50%);
+  top:50%;
+}
+
+.gsix-container li{
+  padding-bottom:1em;
+  display: flex;
+}
+.gsix-container ul{
+  padding-top:1em;
+  list-style: none;
+}
+
+.gsix-container h3{
+  color:#5c959b;
+  font-size:1.5rem;
+}
+
+hr{
+  border:.5px solid white;  
 }
 
 .gseven {
   grid-area:pic-two;
-  background: url(/img/adult-alcohol-alcoholic-beverage.jpg);
+  background: url(/img/TipsyBar2.jpg);
   background-size: cover;
   background-position: center;
+  padding:0em 6em;
+  position:relative;
 }
 
 .sone{
@@ -762,6 +793,14 @@ width:100%;
   margin-top: 2.5em;
 }
 
+.divide-boxtwo p{
+  font-size:1.5em;
+}
+
+.final {
+  margin-top:6em;
+}
+
 .ques{
   margin-top:0em;
 }
@@ -796,19 +835,17 @@ width:100%;
   width: 60%;
 }
 
-.paint p{
-  color:aliceblue;
-}
+
 
 .paint{
-  background:rgb(71, 162, 223);
+  background:white;
   padding-bottom: 3em;
 }
 
 .testtwo p{
   font-size:.85rem;
   padding-bottom:.8em;
-  color:aliceblue;  
+  color:rgb(15, 15, 15);  
 }
 
 .testtwo h4{
@@ -830,18 +867,19 @@ width:100%;
 .test p{
   font-size:.9rem;
   padding-bottom:.8em;
+  color: white;
 }
 
 .test h3{
   width:95%;
   text-align: right;
   color:rgb(212, 231, 35);
-  text-shadow: -1px 0 rgb(44, 143, 209), 0 3px rgb(44, 143, 209), 2px 0 rgb(44, 143, 209), 0 -1px rgb(44, 143, 209);
+  /*text-shadow: -1px 0 rgb(44, 143, 209), 0 3px rgb(44, 143, 209), 2px 0 rgb(44, 143, 209), 0 -1px rgb(44, 143, 209)*/
 }
 
 .test{
   padding:1.5em 7em;
-  background-image:linear-gradient(rgba(20, 20, 20, 0.575), rgba(20, 20, 20, 0.575)),url(/img/tipsyparty.jpg);
+  /*--background-image:linear-gradient(rgba(20, 20, 20, 0.575), rgba(20, 20, 20, 0.575)),url(/img/tipsyparty.jpg);--*/
   background-position: center;
   background-size:cover;  
   display:flex;
@@ -852,8 +890,7 @@ width:100%;
 
 .test-two h3{
   text-align:left;
-  color:#FE9C96;
-  padding-bottom:1rem;
+  color:#74c57e;
   font-size: 1.5rem;
 }
 
@@ -887,13 +924,17 @@ width:100%;
 .test-two ul {
   list-style-type:none;
   padding-bottom:1em;
+  color: white;
 }
 
 .test-two-one ul {
   list-style-type:none;
   padding-bottom:1em;
   text-align:right;
-  
+}
+
+.test-two li{
+  padding-bottom:.25em;
 }
 
 li p{
@@ -969,7 +1010,7 @@ li p{
 
   .header{
     height:100vh;
-    background-image:linear-gradient(rgba(37, 37, 37, 0.459), rgba(37, 37, 37, 0.397)),url(/img/tipsyparty.jpg);
+    background-image:linear-gradient(rgba(14, 14, 14, 0.58), rgba(14, 14, 14, 0.64)),url(/img/TipsyBar.jpg);
     position:relative;
     background-position: center;
     background-size:cover;
@@ -1086,7 +1127,7 @@ li p{
 
   .banner {
     width: 100%;
-    height: 30em;
+    height: auto;
     background: url(/img/tipsymoscow.jpg);
     background-position: center;
     background-size: cover;
@@ -1138,7 +1179,7 @@ li p{
   .testtwo p {
     font-size: 1rem;
     padding-bottom: .8em;
-    color: aliceblue;
+    
   }
 
 }
@@ -1152,14 +1193,6 @@ li p{
     overflow-x: hidden;
   }
 
-  .header{
-    background-image:linear-gradient(rgba(37, 37, 37, 0.288), rgba(37, 37, 37, 0.068)),url(/img/tipsyparty.jpg);
-    position:relative;
-    background-position: center;
-    background-size:cover;
-    background-attachment: fixed;
-  }
-
   .paragraph{
     width: 85%;
     padding: 20px;
@@ -1170,7 +1203,24 @@ li p{
   .grid-container{
     display: grid;
     grid-template-columns: auto auto;
-    grid-template-rows:12em 14em ;
+    grid-template-rows:auto auto ;
+  }
+
+  .gseven {
+    
+    
+    padding:0em;
+    
+  }
+
+  .gsix {
+    
+    padding:0em;
+    
+  }
+
+  .test{
+    padding:1.5em 3em;
   }
 
   .numtwo {
@@ -1259,14 +1309,6 @@ li p{
     transform: rotate(45deg) translate(-5px, -5px);
   }
 
-  .header{
-    height: 100vh;
-    background-image:linear-gradient(rgba(37, 37, 37, 0.288), rgba(37, 37, 37, 0.068)),url(/img/tipsyparty.jpg);
-    position:relative;
-    background-position: center;
-    background-size:cover;
-    background-attachment: fixed;
-  }
 
   .sone .paragraph {
     width: 75%;
@@ -1293,7 +1335,7 @@ li p{
 
   .test{
     padding:1.5em 1em;
-    background-image:linear-gradient(rgba(20, 20, 20, 0.575), rgba(20, 20, 20, 0.575)),url(/img/tipsyparty.jpg);
+    
     background-position: center;
     background-size:cover;  
     display:flex;
@@ -1385,14 +1427,7 @@ li p{
     left: 50%;
   }
   
-  .header{
-    height:100vh;
-    background-image:linear-gradient(rgba(37, 37, 37, 0.288), rgba(37, 37, 37, 0.068)),url(/img/tipsyparty.jpg);
-    position:relative;
-    background-position: center;
-    background-size:cover;
-    background-attachment: fixed;
-  }
+
   
    .toggle .line1{
     transform: rotate(-45deg) translate(-5px, 4px);
@@ -1482,7 +1517,6 @@ li p{
   }
   
   .svg{
-    width:18%;
     height:auto;
     margin:0 1em;
   }
@@ -1520,16 +1554,12 @@ li p{
   /*--- titles---*/
   
   
-  .title{
-    font-family: 'Comfortaa', cursive;
-    text-align: center;
-    color:rgb(71, 162, 223);    
-  }
+ 
   
   .subtitle{
     font-family: 'Comfortaa', cursive;
     font-size:1.2rem;
-    color:rgb(155, 231, 62);
+    color:rgb(24, 24, 24);
     
     padding-top:3em;
     text-align: center;
@@ -1842,7 +1872,7 @@ li p{
   }
   
   .b2{
-    background:linear-gradient(rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.521)), url(/img/beverage-citrus-close-up-1265910.jpg);
+    background:linear-gradient(rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.521)), url(/img/TipsyBar6.jpg);
     background-position:center;
     background-size:cover;
     background-attachment: fixed;
@@ -1893,13 +1923,13 @@ li p{
   }
 
   .slide:first-child{
-    background: url(/img/alcohol-bar-beer-989711.jpg);
+    background: url(/img/TipsyBar8.jpg);
     background-position: center;
     background-size: cover;
   }
 
   .slide:nth-child(2){
-    background:url(/img/alcohol-alcoholic-beverage-bar.jpg) ;
+    background:url(/img/TipsyBar9.jpg) ;
     background-position: center;
     background-size:cover;
   }
@@ -1928,8 +1958,22 @@ li p{
   .grid-container{
     grid-template-areas:
     "content-copy content-copy"
-    "pic-one pic-two";
-    grid-template-rows:  350px 140px;
+    "pic-one pic-one"
+    "pic-two pic-two";
+    grid-template-rows:  auto auto auto;
+  }
+
+  .gseven {
+    
+    
+    padding:0em;
+    
+  }
+
+  .gsix {
+    
+    padding:0em;
+    
   }
   
   .numtwo{
@@ -1944,7 +1988,7 @@ li p{
     position: relative;
     height: 200px;
     width: 100%;
-    background: url(/img/adults-alcohol-alcoholic-beverage-1304473.jpg);
+    background: url(/img/TipsyBar7.jpg);
     background-size:cover;
     background-position: center;
   }
@@ -2061,18 +2105,18 @@ li p{
   
   
   .paint p{
-    color:aliceblue;
+    color:rgb(30, 49, 49);
   }
   
   .paint{
-    background:rgb(71, 162, 223);
+    background:white;
     padding-bottom: 1em;
   }
   
   .testtwo p{
     font-size:.85rem;
     padding-bottom:.8em;
-    color:aliceblue;  
+    color:rgb(32, 49, 49);  
   }
   
   .testtwo h2{
@@ -2105,7 +2149,6 @@ li p{
   
   .test{
     padding:1.5em;
-    background-image:linear-gradient(rgba(20, 20, 20, 0.575), rgba(20, 20, 20, 0.575)),url(/img/tipsyparty.jpg);
     background-position: center;
     background-size:cover;  
     display:flex;
@@ -2168,6 +2211,8 @@ li p{
     margin-bottom:5.5em;
   }
   
+
+
   /*--- page two ---*/
   
   .client-list{
