@@ -1,13 +1,12 @@
 const express = require('express'),
       app = express(),
       routes = require('./routes'),
-      bodyParser    = require('body-parser');
+      bodyParser    = require('body-parser'),
+      compression = require("compression");
 
-
+app.use(compression());
 app.use(bodyParser.urlencoded({extended:true}));
 
-
-app.use('/js', express.static(__dirname + '/js'));
 app.use(express.static("public"));
 app.set("view engine", "ejs");
 
