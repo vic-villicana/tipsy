@@ -17,6 +17,10 @@ app.use("/", routes);
 
 let port = process.env.PORT || 3000;
 
-https.createServer(app).listen(port, ()=>{
+https.createServer({
+  key: fs.readFileSync('./key.pem'),
+  cert: fs.readFileSync('./cert.pem'),
+  passphrase:'tipsyone'
+}, app).listen(port, ()=>{
   console.log("server is up")
 })
