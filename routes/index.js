@@ -1,5 +1,6 @@
 const express     = require('express'),
     app           = express(),
+    debugE         = require('debug')('error'),
     router        = express.Router(),
     {check, validationResult} = require('express-validator'),
     flash = require('connect-flash'),
@@ -22,6 +23,7 @@ router.use(require("express-session")({
   resave:false,
   saveUninitialized:false
 }));
+
 router.use(passport.initialize());
 router.use(passport.session());
 passport.use(new LocalStrategy(User.authenticate()));
@@ -42,7 +44,7 @@ router.get("/signups", isLoggedIn, (req,res)=>{
   
   Signups.find({}, (err, newSignups)=>{
     if(err){
-      console.log(err)
+      debugE(err)
     }else{
       res.render("signups", {signups:newSignups})
     }
@@ -62,7 +64,7 @@ router.post("/signups", [
       let newSignup  = {email:email};
       Signups.create(newSignup,(err, newCreated)=>{
         if(err){
-          console.log(err)
+          debugE(err)
         }else{
           res.redirect('/thankyou')
         }
@@ -97,7 +99,7 @@ router.post("/register", (req, res)=>{
   let newUser = new User({username: req.body.username})
   User.register(newUser, req.body.password, function(err, user){
     if(err){
-      console.log(err);
+      debugE(err);
       return res.render("register")
     }
     passport.authenticate("local")(req, res, function(){
@@ -132,7 +134,7 @@ function isLoggedIn(req, res, next){
 router.get("/clients",isLoggedIn, (req, res)=>{
   Job.find({}, (err, newJobs)=>{
     if(err){
-      console.log(err);
+      debugE(err);
     }else{
       res.render("clients", {job:newJobs})
     }
@@ -148,11 +150,11 @@ router.post("/clients", [
   ],
     (req, res)=>{
       const errors = validationResult(req);
-      console.log(req.body);
+      
       if(!errors.isEmpty()){
         req.flash("error", "please input info in right format")
         res.render('contact', {errors:errors});
-        console.log(errors)
+        debugE(errors);
       }else{
         let name = req.body.name;
         let email = req.body.email;
@@ -163,7 +165,7 @@ router.post("/clients", [
         Job.create(newClient, (err, newCreated)=>{
           if(err){
             req.flash('error', "please fill out correctly")
-            console.log(err)
+            debugE(err)
           }else{
             res.redirect("thankyou");
           }
@@ -175,7 +177,7 @@ router.post("/clients", [
 router.get("/clients/:id", (req, res)=>{
   Job.findById(req.params.id, (err, newBlah)=>{
     if(err){
-      console.log(err);
+      debugE(err);
     }
     else {
       res.render('show', {jobs: newBlah})
