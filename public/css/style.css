@@ -656,11 +656,16 @@ width:100%;
   position: relative;
   height: 90vh;
   width: 100%;
-  background: url(/img/TipsyBar7.jpg);
-  background-size: cover;
-  background-position: center;
 }
 
+.video{
+  position:relative;
+}
+
+.gone video{
+  min-width:100%;
+  min-height: 100%;
+}
 .gtwo{
   grid-column: 1 ;
   grid-row:1 / span 2;
@@ -1986,13 +1991,11 @@ li p{
     
   }
   
-  .gone{
-    position: relative;
-    height: 200px;
+  .gone {
+    top:0;
+    left:0;
+    height: auto;
     width: 100%;
-    background: url(/img/TipsyBar7.jpg);
-    background-size:cover;
-    background-position: center;
   }
   
   .gtwo{
