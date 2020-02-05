@@ -190,6 +190,11 @@ h2{
   text-align: center;
   color: rgb(233, 233, 233); 
 }
+.title.black{
+  color:rgb(15, 15, 15);
+
+}
+
 .title h3{
   font-size:2em;
   padding-top:1em;
@@ -468,15 +473,11 @@ footer{
   background-position-y:40%;
   background-size:cover;
   color: rgb(233, 233, 233);
+  text-align: center;
 }
 
-.pc-mission{
-
-}
-
-.pc-mission p{
-  
-  
+.pc-events p{
+  padding-top:.5em;  
 }
 
 .paragraph{
@@ -653,18 +654,23 @@ width:100%;
 }
 
 .gone {
-  position: relative;
-  height: 90vh;
+  position: relative;  
   width: 100%;
+  top:0;
+  bottom:0;
+  overflow:hidden;
 }
 
 .video{
   position:relative;
+  height:100%;
+  width:100%;
 }
 
 .gone video{
   min-width:100%;
   min-height: 100%;
+  display:block;
 }
 .gtwo{
   grid-column: 1 ;
@@ -845,7 +851,9 @@ hr{
 
 
 .paint{
-  background:white;
+  background-image:linear-gradient(rgba(255, 255, 255, 1.000), rgba(255, 255, 255, 0.800)),url(/img/california.jpg);
+  background-position: center;
+  background-size:cover;
   padding-bottom: 3em;
 }
 
@@ -893,7 +901,9 @@ hr{
   flex-direction:column;
 }
 
-
+.list{
+  padding-top:1em;
+}
 
 .test-two h3{
   text-align:left;
@@ -1047,7 +1057,7 @@ li p{
   .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 25em 25em;
+    grid-template-rows: auto auto;
     grid-template-areas:
     "pic-one content-copy"
     "pic-two content-copy"
@@ -1397,6 +1407,12 @@ li p{
     max-width:480px;
     margin:0 auto;
     overflow-x: hidden;
+  }
+
+  .video{
+    position:relative;
+    height:auto;
+    width:100%;
   }
   
   .hero-text-box h1 {    
@@ -1994,8 +2010,9 @@ li p{
   .gone {
     top:0;
     left:0;
-    height: auto;
     width: 100%;
+    position: relative;
+    display: block;
   }
   
   .gtwo{
