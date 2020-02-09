@@ -1,3 +1,5 @@
+
+
 *{
   margin:0;
   padding:0;
@@ -141,6 +143,8 @@ h2{
   
 }
 
+
+
 .navbar a:hover{
   color:rgba(26, 243, 55, 0.938);
 }
@@ -155,7 +159,7 @@ h2{
   position:absolute;
   width:100%;
   left:50%;
-  top:45%;
+  top:50%;
   transform: translate(-50%, -50%);
   color:aliceblue;
   text-align: center;
@@ -164,10 +168,9 @@ h2{
 }
 
 .hero-text-box h1{
-  font-family:"lalezar", cursive;
+  font-family: 'Josefin Sans', sans-serif;
   font-size: 4em;
-  text-shadow: -1px 0 #FE9C96, 0 3.5px #FE9C96, 2.5px 0 #FE9C96, 0 -1px #FE9C96;
-  line-height:1.2em ;
+  line-height: 1.2em;
 }
 
 .hero-text-box h4{
@@ -314,12 +317,18 @@ h2{
   margin: 0 15px;
 }
 
+.contact-form.index{
+  text-align:center;
+}
+
 .contact-form{
   height:auto;
-  text-align:center;
   position: relative;
   width:auto;
-        
+}
+
+.contact-form label{
+  margin-top:1em;
 }
 
 .contact-form h3{
@@ -343,15 +352,18 @@ width:100%;
 
 }
 
-form{
-  font-size:5rem;
-  color:white;
+#start{
+  margin-top:0em;
 }
 
-input{
+#email{
+  margin-bottom:2em;
+}
+
+.contact-form input{
   color:black;  
-  width:90%;
-  margin:20px 0;
+  width:100%;
+  margin:1.25em 0;
   background:rgba(0, 0, 0, 0);
   border:none;
   font-size: 1.4rem;
@@ -379,8 +391,8 @@ select{
   font-family:"comfortaa", cursive;
   
 }
-textarea{
-  width:90%;
+.contact-form textarea{
+  width:100%;
   margin-top:40px;
   background:rgba(0, 0, 0, 0);
   border:none;
@@ -396,8 +408,7 @@ textarea{
   color:whitesmoke;
   border-radius: 6px;
   font-size: 1rem;
-  margin:0 auto;
-  width:50%;
+  
 }
 
 #submit:hover{
@@ -731,8 +742,9 @@ width:100%;
 }
 
 .gsix-container h3{
-  color:#5c959b;
+  color:#96cefe;/*#5c959b;*/
   font-size:1.5rem;
+  padding: 0.1em;
 }
 
 hr{
@@ -909,6 +921,7 @@ hr{
   text-align:left;
   color:#74c57e;
   font-size: 1.5rem;
+  padding: .1em;
 }
 
 .test-two h2{
@@ -1043,16 +1056,7 @@ li p{
     background-attachment: fixed;
 }
 
-  .hero-text-box{
-    position:absolute;
-    width:100%;
-    left:50%;
-    top:45%;
-    transform: translate(-50%, -50%);
-    color:aliceblue;
-    text-align: center;
-    display:inline-block;
-  }
+  
 
   .grid-container {
     display: grid;
@@ -1308,10 +1312,18 @@ li p{
   .nav-active{
     transform: translate(0%)
   }
-
+  
+  .nav-links a {
+    opacity: 0; 
+  }
+  
   .burger {
     display: block;
     z-index: +2;
+  }
+
+  .burger div{
+    transition: all 0.3s ease;
   }
 
   .toggle .line1{
@@ -1333,9 +1345,7 @@ li p{
   }
   .paragraph{
     width: 75%;
-    padding: 20px;
-    margin: 0 auto;
-    font-size: 1.1rem;
+    margin: 0 auto;   
   }
 
   .pc-2 {
@@ -1423,11 +1433,7 @@ li p{
     font-size:250%;
     line-height:.9em;
   }
-  
-  h3{
     
-  }
-  
   h2{
     font-size:2.5em;
   }
@@ -1464,20 +1470,6 @@ li p{
      transform: rotate(45deg) translate(-5px, -5px);
    }
   
-  .navbar{
-    justify-content:space-between;
-    align-items:center;
-    display:flex;
-    width:100%;
-    position: relative;
-    padding:0 15px;
-    padding-right:2em;
-    z-index: +1;
-    min-height:8vh;
-    background:linear-gradient(rgba(71, 71, 71, 0.89), rgba(0, 0, 0, 0));
-    font-size:1rem;
-    transform: translateY(-25px);
-  }
   
   .nav-links{
     display:flex;
@@ -1521,6 +1513,10 @@ li p{
     
   }
   
+  .nav-links a {
+    opacity: 0; 
+  }
+
   @keyframes navLinkFade{
     from{
       opacity: 0;      
@@ -1544,17 +1540,7 @@ li p{
     margin:0 1em;
   }
   
-  .hero-text-box{
-    position:absolute;
-    width:100%;
-    left:50%;
-    top:45%;
-    transform: translate(-50%, -50%);
-    color:aliceblue;
-    text-align: center;
-    font-size: 1.25rem;
-    display:inline-block;
-  }
+ 
   
   .hero-text-box h2{
     font-family:"Lobster", cursive;
@@ -1676,20 +1662,13 @@ li p{
   .contact{
     height: auto;
     position: relative;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.750);
+    
     background-position: center;
     background-size: cover;
     padding: 25px;
     margin: 0 auto;
     width: 80%;
-  }
-  
-  .contact-form{
-    height:auto;
-    text-align:center;
-    position: relative;
-    width:auto;
-          
   }
   
   .contact-form h1{
@@ -1713,19 +1692,10 @@ li p{
   
   }
   
-  form{
-    font-size:5rem;
-    color:white;
-  }
+  
   
   input{
-    color:black;  
-    width:90%;
-    margin:20px 0;
-    background:rgba(0, 0, 0, 0);
-    border:none;
-    font-size: 1.4rem;
-    border-bottom:1px solid rgb(107, 107, 219);
+    margin:1em 0;
   }
   
   
@@ -1752,8 +1722,7 @@ li p{
     color:whitesmoke;
     border-radius: 6px;
     font-size: 1rem;
-    margin:0 auto;
-    width:50%;
+    width:100%;
   }
   
   #submit:hover{
@@ -1815,7 +1784,7 @@ li p{
   }
   
   .paragraph-container {
-    padding: 2em 0;
+    padding: 4em 0;
   }
 
   .pc-2 {
@@ -1826,8 +1795,7 @@ li p{
   
   .paragraph{
     width:100%;
-    padding:20px;
-    font-size:1.1rem;
+    line-height: 1.2;
   }
   
   .inline{
@@ -1836,10 +1804,7 @@ li p{
   }
   
   .b2 .paragraph{
-    width:100%;
-    padding:20px;
-    font-size:1.25rem;
-    color:white;
+    line-height: 1.2;
   }
   
   .sone .paragraph {
@@ -2036,13 +2001,12 @@ li p{
     background-position: center;
   }
   
-  
-  
   .sone{
     background:linear-gradient(rgba(37, 37, 37, 0.808), rgba(0, 0, 0, 0)),url(/img/alcohol-bar-beer-989711.jpg);
     background-size: cover;
     background-position: center;
     height: 100%;
+    padding:2em 0;
   }
   
   .stwo{
@@ -2160,6 +2124,7 @@ li p{
   .test p{
     font-size:.9rem;
     padding-bottom:.8em;
+    line-height: 1.5em;
   }
   
   .test h2{
