@@ -16,10 +16,11 @@
       <form action="/clients" method="POST">
         <input type="text" name="name" id="name" placeholder="Name First/Last">
         <input type="text" id="email" name="email" placeholder="E-Mail Address">
+        <label for="start">Event Date:</label>
         <input type="date" id="start" name="eventdate"
         min="2020-01-01" max="2021-01-01">
-        <input type="number" name="drinkers" id="drinkers" placeholder="Drinkers" min="30" max="150" step="10">
-        <textarea name="description" placeholder="Thoughts?"></textarea>
+        <!---<input type="number" name="drinkers" id="drinkers" placeholder="Drinkers" min="30" max="150" step="10">-->
+        <textarea name="description" placeholder="Questions?"></textarea>
         <input id='submit' type="submit" value="Let's Talk">
       </form>      
     </div>
