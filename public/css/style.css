@@ -468,11 +468,10 @@ footer{
   to   { transform: translate(0, -0px); }    
 }
 
-.pevents{
+.service{
   display: flex;
   flex-direction: column;
   justify-content:center;
-  
 }
 
 
@@ -886,7 +885,18 @@ hr{
   text-align:center;
 }
 
+.pevents h2{
+  text-align: center;
+}
+
 .paint{
+  background-image:linear-gradient(rgba(255, 255, 255, 1.000), rgba(255, 255, 255, 0.800)),url(/img/california.jpg);
+  background-position: center;
+  background-size:cover;
+  padding: 4em 0;
+}
+
+.pevents{
   background-image:linear-gradient(rgba(255, 255, 255, 1.000), rgba(255, 255, 255, 0.800)),url(/img/california.jpg);
   background-position: center;
   background-size:cover;
@@ -1579,6 +1589,10 @@ li p{
     left:5%;
     top:8%
   }
+
+  .g-container{
+    height: 10em;
+  }
   
   /*--- titles---*/
   /*--- titles---*/
@@ -1798,12 +1812,7 @@ li p{
     to   { transform: translate(0, -0px); }    
   }
   
-  .pevents{
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    
-  }
+  
   
   .paragraph-container {
     padding: 4em 0;
