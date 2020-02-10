@@ -22,6 +22,11 @@ body{
   overflow-x: hidden;
 }
 
+video {
+  width: 100%    !important;
+  height: auto   !important;
+}
+
 h1{
   font-size:350%;
   line-height:.9em;
@@ -207,7 +212,6 @@ h2{
   font-family: 'Comfortaa', cursive;
   font-size:1rem;
   color:rgb(155, 231, 62);  
-  padding-top:3em;
   text-align: center;
   
 }
@@ -653,7 +657,26 @@ width:100%;
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows:100px 100px 125px 125px 125px 125px;
-  
+}
+
+.g-container{
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 25em;
+}
+
+.gpic{
+  grid-column: 1;
+  background-image: url(/img/alcohol-bar-beer-989711.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.gpic-two{
+  grid-column: 2;
+  background-image: url(/img/TipsyBar4.jpg);
+  background-size:cover;
 }
 
 .numtwo{
@@ -666,7 +689,6 @@ width:100%;
 
 .gone {
   position: relative;  
-  width: 100%;
   top:0;
   bottom:0;
   overflow:hidden;
@@ -860,13 +882,15 @@ hr{
   width: 60%;
 }
 
-
+.paint h2{
+  text-align:center;
+}
 
 .paint{
   background-image:linear-gradient(rgba(255, 255, 255, 1.000), rgba(255, 255, 255, 0.800)),url(/img/california.jpg);
   background-position: center;
   background-size:cover;
-  padding-bottom: 3em;
+  padding: 4em 0;
 }
 
 .testtwo p{
@@ -895,6 +919,7 @@ hr{
   font-size:.9rem;
   padding-bottom:.8em;
   color: white;
+  line-height: 1.5em;
 }
 
 .test h3{
@@ -952,7 +977,7 @@ hr{
 }
 
 .test-two ul {
-  list-style-type:none;
+  
   padding-bottom:1em;
   color: white;
 }
@@ -964,11 +989,11 @@ hr{
 }
 
 .test-two li{
-  padding-bottom:.25em;
+  padding-bottom:.5em;
 }
 
 li p{
-  color:white;
+  line-height: 1.5em;
 }
 .subtext{
   font-size:.80rem;
@@ -1129,6 +1154,7 @@ li p{
     padding: 20px;
     margin: 0 auto;
     font-size: 1rem;
+    line-height: 1.75em;
   }
 
   .howwedo.paragraph{
@@ -1184,7 +1210,6 @@ li p{
     font-family: 'Comfortaa', cursive;
     font-size: 1.5rem;
     color: rgb(155, 231, 62);
-    padding-top: 3em;
     text-align: center;
   }
 
@@ -1198,9 +1223,7 @@ li p{
   }
 
   .testtwo p {
-    font-size: 1rem;
-    padding-bottom: .8em;
-    
+    font-size: 1rem;    
   }
 
 }
@@ -1401,7 +1424,6 @@ li p{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    
   }
   
   html{
@@ -1795,7 +1817,7 @@ li p{
   
   .paragraph{
     width:100%;
-    line-height: 1.2;
+    line-height: 1.5;
   }
   
   .inline{
@@ -1943,6 +1965,10 @@ li p{
     cursor: pointer;
   }
   
+  .gpic {
+    height: 10em;
+  }
+
   .grid-container{
     grid-template-areas:
     "content-copy content-copy"
@@ -1952,16 +1978,11 @@ li p{
   }
 
   .gseven {
-    
-    
     padding:0em;
-    
   }
 
   .gsix {
-    
     padding:0em;
-    
   }
   
   .numtwo{
