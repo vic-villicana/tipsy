@@ -1,107 +1,180 @@
 <% include partials/header %>
   <header class="header">
-   <% include partials/nav %>
-   <div class="hero-text-box">
-      <h2>Bringing the bar experience to you</h2>
-      <div class="float">
-          <btn class="btn"><a href="contact">Book now</a></btn>
-      </div>
-      
-    
+  <% include partials/nav %>
+  <div class="hero-text-box" data-aos="fade-up">
+      <h1>bringing the bar<br/>experience to you!</h1> 
   </div>
   </header>
-  <section class="pevents">
-    <div class="title">
-      <h1>Past<br/>Events</h1>  
+  <section class="video">
+    <div class="gone">
+          <video src="/video/TipsyBar2019.mp4" class="gone" muted autoplay ></video>
+        </div>    
+  </section>
+  <section class="slidesection">
+    <div class="pevents">
+      <h2>past events</h2>
+      <div class="paragraph">
+        <p>we are great at what we do because we cater to the unique needs of all our clients. because when you are  planning an event or a party we know that anything can happen, which is why Tipsy Bar is ready for anything, making  every moment with us a memorable experience. </p>
+      </div>    
     </div>
-    <div class="paragraph">
-      <p>
-        Non laboris elit adipisicing cupidatat cillum ut. Fugiat ut aliqua laboris non sint sunt est commodo ullamco qui dolore minim elit. 
-      </p>
+    <div class="g-container">
+      <div class="gpic" ></div>
+      <div class="gpic-two" ></div>
+      <div class="slide-container-container">
+        <div class="buttons">
+        <div class="bbtn" id="prev">
+          <img src="/svg/ionicons-arrow-dropleft.svg" alt="left arrow" height="36" width="36">
+        </div>
+        <div class="bbtn" id="next">
+          <img src="/svg/ionicons-arrow-dropright.svg" alt="right arrow" height="36" width="36">
+        </div>
+      </div>
+      <div class="slide-container">
+        <div class="slide current"></div>
+        <div class="slide"></div>
+        <div class="slide"></div>
+      </div>
+      </div>
     </div>
-    <div class="grid-container">
-      <div class="gone"></div>
-      <div class="gtwo"></div>
-      <div class="gthree"></div>
-      <div class="gfour"></div>
-      <div class="gfive"></div>
-      <div class="gsix"></div>
-      <div class="gseven"></div>
+    
+  </section>
+  <section class="service" id="services">    
+    <div class="paragraph-container pc-events">
+      <div class="title" data-aos="fade-up">
+        <h2>services</h2>  
+      </div>
+      <div class="paragraph" data-aos="fade-up">
+        <p>
+          every night with Tipsy Bar is a memory because we love what we do.<br>
+          accomidations and more service details can be provided upon request.
+        </p>
+      </div>
+      
+    </div>   
+    <div class="grid-container">     
+      <div class="gfive">
+        <div class="side2side" data-aos="fade-left">
+          <div class="test test-two">
+            <div>
+              <h2>open bar/<br>hosted bar</h2>
+              <p>beverages are paid by client hosting event and are free for guests.</p>
+            </div>
+            <h3>what we provide</h3>
+            <hr>
+            <ul class='list'>                
+                <li>portable bar</li>
+                <li>two bar tenders</li>
+                <li>cusotm cocktail menu with choice of drinks</li>
+                <li>misc. bar supplies, blender, straws, napkins, garnishes shot cups.</li>
+            </ul>
+            <h3>whats needed from you</h3>
+            <hr>
+            <ul class="list">
+              <li>host is providing alcohol</li>  
+              <li>juice mixers</li>  
+              <li>cups</li>   
+              <li>ice</li>  
+              <li>non-alcoholic</li> 
+            </ul> 
+              <p>
+                depending on number of guests tipsy bar wil send you a shoppinglist of what is needed and a rough estimate of how much should be needed.
+              </p>              
+              <div class="bar"><a href="contact">Book Now!</a></div>
+          </div> 
+      </div>
+    </div>
+      <div class="gsix">
+        <div class="gsix-container" data-aos="flip-up">
+          <h3>about this service</h3>
+          <hr>          
+          <ul>
+            <li>
+              <img src="/svg/ios-paper.svg" class="svg" alt="drinking glass">
+              <p>Tipsy Bar will send a list of what is needed from you and provide a rough estimate of how much is needed depending on # of guests.</p>
+            </li>
+            <li><img src="/svg/md-time.svg" class="svg" alt="drinking glass"><p>Minimun 4hrs service</p> </li>
+            <li><img src="/svg/md-map.svg" class="svg" alt="drinking glass"><p>Serving: Los Angeles & San Fernando Valley</p></li>
+            <li><img src="/svg/md-woman.svg" class="svg" alt="drinking glass"><p>Services for 30-200 guests.</p></li>            
+          </ul>
+        </div>
+      </div>
+      <div class="gseven">
+        <div class="gsix-container" data-aos="flip-down">
+          <h3>about the drinks</h3>
+          <hr>
+          <ul>
+            <li><img src="/svg/cocktail.svg" class="svg" alt="drinking glass"><p> types of alcohol served: tequila, whiskey, wine, etc.</p></li>            
+            <li><img src="/svg/md-ribbon.svg" class="svg" alt="drinking glass"><p>Serving only the finest spirits.</p></li>
+            <li><img src="/svg/md-menu.svg" class="svg" alt="drinking glass"><p>Drink Menu Provided upon request.</p></li>
+          </ul>
+        </div>
+      </div>
     </div>
     
   </section>
   <section class="howedo">
-    <div class="title">
-      <h1>The<br/>Experience </h1>
-    </div>    
-    
-    <div class="banner b2">
+    <div class="paint">
+      <div class="subtitle">
+        <h3>bartending services <br/>for every occasion</h3>
+      </div>
       <div class="paragraph">
         <p>
-          Eiusmod eu nostrud culpa et sit ut consectetur. Proident elit eu reprehenderit incididunt ut ipsum aliquip esse ex aliqua voluptate adipisicing amet. 
+          Tipsy Bar is about more than just the drinks. from our excellent drink selection to our amazing staff, nothing is more important to us than bringing the vibe. 
         </p>
       </div>
-    </div>
-    <div class="subtitle">
-      <h2>The Valleys Premier <br/> Bartending Service</h2>
-    </div>
-    <div class="paragraph">
-      <p>
-          In cillum consectetur voluptate et mollit dolor est reprehenderit incid cillum. Aliquip proident Lorem tempor consequat consectetur.
-      </p>
-    </div>
-    <div class="paragraph">
+      <div class="paragraph">
+          <p>
+            Every experience with us is one of a kind. we are always happy to work with our customers and make their experience as pleasent as possible. see what our previous customers are saying.
+          </p>
+      </div>      
+       
+      <div class="float">
+        <div class="divide-box"><div class="bar web"><a href="contact">Contact Us</a></div></div>
+      </div> 
+    <div class="blue">
+      <img alt="testamonial picture" data-aos="flip-up" class="testpic" src="/img/woman-wearing-black-eyeglasses.jpg" height="125" width="125">
+      <div class="testtwo" data-aos="fade-left">
+        <p><span>"OMG everything couldnt have gone more smoothly,</span></p>
         <p>
-          Officia eiusmod ullamco minim veniam qui minim id veniam. Sint aliquip esse exercitation dolore sint quis anim ad nisi. Lorem Lorem incididunt eu qui eiusmod laborum sit non laborum aliquip tempor id sint. 
+           the service and the drinks were just splendid. if your looking for you and your guests to have a great time, I definately recommend hiring the tipsy bar!"
         </p>
+        <h4>
+          suzy q
+        </h4>
+      </div> 
+    </div>
+          
+    </div>
+    <div class="banner b2">
+      <div class="paragraph-container pc-2" data-aos="fade-up">
+        <div class="title">
+          <h2>the<br/>experience </h2>
+        </div>    
+        <div class="paragraph">
+          <p>
+            every night is a special night when Tipsy Bar pours it up. our amazing staff are always ready to keep the drinks flowing and  the good vibes going. check us out and see why everybody loves us so much.
+          </p>
+        </div>
+        <div class="btn web">
+          <a href="story">More About Us</a>
+        </div>
+      </div>   
     </div>
     
-    <div class="test">
-      <p>
-        "OMG everything couldnt have gone more smoothly, the service and the drinks were just splendid. if your looking for you and your guests to have a great time, I definetaly recommend hiring the tipsy bar!."
-      </p>
-      <h2>
-        Suzy Q
-      </h2>
-    </div>   
-    <div class="spacer"></div> 
+    
   </section>
-  <section class="final cut">
-    <div class="banner b3">
-      <div class="btext">
-        <p>
-          Find out why we are the valleys best bartending service.
-        </p>
-      </div>      
-    </div>
-    <div class="float">
-        <div class="divide-box"><btn class="btn web"><a href="contact">Talk to Us!</a></btn></div>
-    </div> 
-    <div class="divide-box">
+  <section class="final cut">   
+    <div class="divide-boxtwo">
+      <p>
+        Find out why we are the valleys best bartending service.
+      </p>
         <h3><a href="#">any questions?</a></h3>
     </div>   
     <div class="db2">
-      <a href="#"><img class="svg" src="/svg/twitter.svg" ></a>
-      <a href="#"><img class="svg" src="/svg/instagram.svg" ></a>
-      <a href="#"><img class="svg" src="/svg/facebook.svg" ></a>
-    </div>
-    <div class="spacer"></div>    
+      <a href="#"><img class="svg" alt="twitter logo" src="/svg/twitter.svg" weight="50" height="50" ></a>
+      <a href="#"><img class="svg" alt="instagram logo" src="/svg/instagram.svg" weight="50" height="50" ></a>
+      <a href="#"><img class="svg" alt="facebook logo" src="/svg/facebook.svg" weight="50" height="50" ></a>
+    </div>      
   </section>
-  <section >
-    <div class="contact-form index">
-      <h1>Keep in touch</h1>
-      <p>sign up for our newsletter and get exclusive offers!</p>
-      <div class="form" >
-      <form action="/signups" method="POST">
-      <input type="text" id="email" name="email" placeholder="E-Mail Address">        
-      <input id='submit'  type="submit" value="Holla!">
-      </form>            
-      </div>
-    </div>  
-    <div class="subtext">
-        <p>
-          we respect your privacy
-        </p>
-    </div>
-  </section>
+<% include partials/form %>
 <% include partials/footer %>

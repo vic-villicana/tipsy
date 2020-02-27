@@ -1,3 +1,5 @@
+
+
 *{
   margin:0;
   padding:0;
@@ -6,19 +8,24 @@
 }
 
 html{
-  background-color:rgb(253, 253, 253);
+  background-color:#fefefe;
   text-rendering: optimizeLegibility;
-  font-family: 'Comfortaa', cursive;
-
-  font-size:15px;
+  font-family: 'Poppins', sans-serif;
+  font-size:16px;
   font-weight:300;
   overflow-x: hidden;
+  box-sizing:border-box;
 }
 
 body{
-  max-width:480px;
+  max-width:767px;
   margin:0 auto;
   overflow-x: hidden;
+}
+
+video {
+  width: 100%    !important;
+  height: auto   !important;
 }
 
 h1{
@@ -26,26 +33,35 @@ h1{
   line-height:.9em;
 }
 
-h3{
-  font-family: 'Yellowtail', cursive;
-}
+
 
 h2{
-  font-family: 'Yellowtail', cursive;
+  font-family: 'montserrat', cursive;
+    font-size: 3em;
+    text-transform: capitalize;
 }
 
 #logo img{
   width:145px;
   height:auto;
-
+  
 }
 
+.logo img{
+  width:200px;
+  height:auto; 
+}
 
-
+.logo {
+  position: relative;
+  transform: translate(-50%, 15%);
+  top: 10%;
+  left: 50%;
+}
 
 .header{
-  height:78vh;
-  background-image:linear-gradient(rgba(37, 37, 37, 0.288), rgba(37, 37, 37, 0.068)),url(/img/tipsyparty.jpg);
+  height:100vh;
+  background-image:linear-gradient(rgba(37, 37, 37, 0.288), rgba(37, 37, 37, 0.068)),url(/img/TipsyBar.jpg);
   position:relative;
   background-position: center;
   background-size:cover;
@@ -85,6 +101,18 @@ h2{
   
 }
 
+@keyframes navLinkFade{
+  from{
+    opacity: 0;      
+    transform: translateX(50px);
+  }
+
+  to{
+    opacity: 1;      
+    transform: translateX(0px);
+  }
+}
+
 .burger{
   display:block;
   z-index: +2;
@@ -96,6 +124,18 @@ h2{
   height:2px;
   background-color:white;
   margin:5px;
+}
+
+.toggle .line1{
+ transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2{
+  opacity: 0;
+}
+
+.toggle .line3{
+  transform: rotate(45deg) translate(-5px, -6px);
 }
 
 .nav-active{
@@ -110,12 +150,14 @@ h2{
   
 }
 
+
+
 .navbar a:hover{
   color:rgba(26, 243, 55, 0.938);
 }
 
 .svg{
-  width:8%;
+  width:18%;
   height:auto;
   margin:0 1em;
 }
@@ -123,18 +165,19 @@ h2{
 .hero-text-box{
   position:absolute;
   width:100%;
-  left:50%;
-  top:40%;
-  transform: translate(-50%, -50%);
   color:aliceblue;
   text-align: center;
   font-size: 1.25rem;
   display:inline-block;
+  top: 35%;
 }
 
-.hero-text-box h2{
-  font-family:"comfortaa", cursive;
-  padding-bottom:15px;
+.hero-text-box h1{
+  font-family: 'Lemonada', cursive;
+
+  font-size: 4em;
+  line-height: 1.2em;
+  text-transform: capitalize;
 }
 
 .hero-text-box h4{
@@ -147,22 +190,54 @@ h2{
   top:8%
 }
 
+
 /*--- titles---*/
 /*--- titles---*/
 /*--- titles---*/
+
+
+.title{
+  font-family: 'montserrat', cursive;
+  text-align: center;
+  color: rgb(233, 233, 233); 
+}
+.title.black{
+  color:rgb(15, 15, 15);
+
+}
+
+.title h3{
+  font-size:2em;
+  padding-top:1em;
+}
+
+.subtitle{
+  font-family: 'montserrat', cursive;
+  font-size:1rem;  
+  text-align: center;
+  padding-top: 4em;
+}
+
+.subtitle h3{
+  font-family:'montserrat', cursive;
+  white-space: nowrap;
+  width:100%;
+  overflow: auto;
+  margin:0 auto;
+  font-weight:bold;
+  font-size: 1.5em;
+  text-transform: capitalize;
+}
 
 .index h1{
   color:rgb(27, 27, 27);
 }
 
-.story h2{
-  font-family:'Yellowtail', cursive;
-  font-size:3.5rem;
-  text-shadow: -1px 0 #FE9C96, 0 3.5px #FE9C96, 2.5px 0 #FE9C96, 0 -1px #FE9C96;
-}
+
 
 .story h4{
   color:#FE9C96;
+  font-family: "montserrat", cursive;
 }
 
 
@@ -192,6 +267,52 @@ h2{
   color:rgba(102, 188, 228);
 }
 
+.btn a {
+  text-decoration: none;
+  padding: 13px;
+  background: linear-gradient(45deg, rgb(111, 169, 235), #86D12C);
+  color: whitesmoke;  
+  border-radius:6px;
+  font-size: 1rem;
+  margin-right: 0px;
+}
+
+.bar a{
+  background: red;
+  margin-bottom:50px;
+  padding: 13px 30px;
+  text-decoration:none;
+  color:whitesmoke;
+  border-radius: 6px;
+}
+
+.bar{
+  margin:2em auto;  
+  display:inline-block;
+}
+
+.list ul{
+  padding-bottom:2em;
+}
+
+.web a{
+  color:white;
+}
+/*--- contact---*/
+/*--- contact---*/
+/*--- contact---*/
+.error{
+  color: rgb(221, 54, 54);
+  padding: .5em;
+}
+
+.error li{
+  list-style: none;
+}
+
+#messages{
+  background: rgb(179, 184, 189);
+}
 
 .contact{
   height: auto;
@@ -203,18 +324,25 @@ h2{
   margin: 0 15px;
 }
 
-.contact-form{
-  height:auto;
+.contact-form.index{
   text-align:center;
-  position: relative;
-  width:auto;
-        
 }
 
-.contact-form h1{
+.contact-form{
+  height:auto;
+  position: relative;
+  width:auto;
+}
+
+.contact-form label{
+  margin-top:1em;
+  font-family: "montserrat", sans-serif;
+}
+
+.contact-form h3{
   margin:0;
   font-size:2rem;
-  
+  text-transform: capitalize;
 }
 
 .contact-form p{
@@ -232,18 +360,22 @@ width:100%;
 
 }
 
-form{
-  font-size:5rem;
-  color:white;
+#start{
+  margin-top:0em;
+  font-size: 1rem;
 }
 
-input{
-  color:aliceblue;
-  
-  width:90%;
-  margin:20px 0;
+#email{
+  margin-bottom:2em;
+}
+
+.contact-form input{
+  color:black;  
+  width:100%;
+  margin:1.25em 0;
   background:rgba(0, 0, 0, 0);
   border:none;
+  font-size: 1.4rem;
   border-bottom:1px solid rgb(107, 107, 219);
 }
 
@@ -265,27 +397,27 @@ select{
 ::placeholder{
   color:black;
   font-size:1rem;
-  font-family:"comfortaa", cursive;
+  font-family:"Montserrat", cursive;
   
 }
-textarea{
-  width:90%;
+.contact-form textarea{
+  width:100%;
   margin-top:40px;
   background:rgba(0, 0, 0, 0);
   border:none;
+  font-size:1.5rem;
   border-bottom:1px solid rgb(107, 107, 219);
 }
 
 
 #submit{ 
-  font-family:'Comfortaa', cursive;
+  font-family:'Montserrat', cursive;
   padding:10px;
   background:rgb(15, 148, 15);
   color:whitesmoke;
   border-radius: 6px;
   font-size: 1rem;
-  margin:0 auto;
-  width:50%;
+  
 }
 
 #submit:hover{
@@ -297,8 +429,9 @@ textarea{
 footer{
   height:auto;
   background: rgb(45, 161, 228);
-  padding:20px 0;
-  
+  padding: 30px 0 15px 0;
+  position: relative;
+  text-align: center;
 }
 
 .con{
@@ -312,12 +445,30 @@ footer{
 
 .footer{
   margin:0 auto;
-  width:75%;
+  width:90%;
   font-size:1.25rem;
   color:aliceblue;
-  text-align: center;
+  display: flex;
+  justify-content:space-between;
   position:relative;
   }
+
+  .footer-links{
+    display: flex;
+  }
+
+  .footer-links a{
+    text-decoration: none;
+    color: white;
+  }
+
+  .footer-link {
+    padding-right: 1em;
+  }
+
+.footer h5{
+  font-family: "Lobster", sans-serif;
+}
 /*-- reusable components--*/
 /*-- reusable components--*/
 /*-- reusable components--*/
@@ -328,6 +479,7 @@ footer{
   animation-iteration-count: infinite;
   animation-timing-function:ease-in-out;  
   margin-top:5px;
+  text-align: center;
 }
 
 @keyframes float {
@@ -336,45 +488,41 @@ footer{
   to   { transform: translate(0, -0px); }    
 }
 
-.pevents{
+.service{
   display: flex;
   flex-direction: column;
   justify-content:center;
+}
+
+
+
+.paragraph-container{
+  padding: 5em 0;
   
 }
 
-.title{
-  font-family: 'Galada', cursive;
+.pc-events{
+  padding: 4em 0;
+  background-image: linear-gradient(rgba(8, 8, 8, 0.90), rgba(8, 8, 8, 0.90)), url(/img/city-buildings-and-trees-during-golden-hour.jpg);
+  background-position-y:40%;
+  background-size:cover;
+  color: rgb(233, 233, 233);
   text-align: center;
-  color:rgb(44, 143, 209);
-  padding-top:3em;  
-  text-shadow: -1px 0 #FE9C96, 0 1px #FE9C96, 2.5px 0 #FE9C96, 0 -1px #FE9C96;
-  
 }
 
-.subtitle{
-  font-family: 'Comfortaa', cursive;
-  font-size:1rem;
-  color:#86D12C;
-  
-  padding-top:3em;
-  text-align: center;
-  
-}
-
-.subtitle h2{
-  font-family:'Comfortaa', cursive;
-  white-space: nowrap;
-  width:100%;
-  overflow: auto;
-  margin:0 auto;
-  font-weight:bold;
+.pc-events p{
+  padding-top:.5em;  
 }
 
 .paragraph{
   width:100%;
   padding:20px;
-  font-size:1.25rem;
+  font-size:1.1rem;
+}
+
+.inline{
+  text-align:center;
+  padding-bottom:2.5em;
 }
 
 .b2 .paragraph{
@@ -382,14 +530,15 @@ footer{
   padding:20px;
   font-size:1.25rem;
   color:white;
+  margin-bottom: 1em;
 }
 
 .sone .paragraph{
-  width: auto;
+  width: 50%;
   padding: 10px 40px;
-  font-size: 1.25rem;
   position: relative;
-  top: 20%;
+  left:8%;
+  margin: 0;
   color: white;
 }
 
@@ -422,9 +571,76 @@ width:100%;
 
 }
 
+/*---slider---*/
+/*---slider---*/
+/*---slider---*/
+
+.slide-container-container{
+  grid-area:slide;
+  position: relative;
+}
+
+.slide-container{
+  position: relative;
+  width: 100%;
+  height:100%;
+  overflow: hidden;
+}
+
+.slide{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: opacity .5s ease-in-out;
+}
+
+.slide.current{
+  opacity: 1;
+}
+
+.slide:first-child{
+  background: url(/img/TipsyBar7.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.slide:nth-child(2){
+  background:url(/img/TipsyBar5.jpg) ;
+  background-position: center;
+  background-size:cover;
+}
+
+.slide:nth-child(3){
+  background: url(/img/tb1.jpg);
+  background-position: center;
+  background-size:cover;
+}
+
+.buttons{
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  z-index: 1;
+  width:100%;
+  transform: translate(0, -50%);
+  top: 50%;
+}
+
+.bbtn{
+  cursor: pointer;
+}
+
 /*---one offs---*/
 /*---one offs---*/
 /*---one offs---*/
+
+.end-box{
+  padding:4em 0 3em 0;
+}
 
 .banner{
   width:100%;
@@ -437,12 +653,32 @@ width:100%;
 }
 
 .b2{
-  background: url(/img/beverage-citrus-close-up-1265910.jpg);
+  background:linear-gradient(rgba(37, 37, 37, 0.288), rgba(37, 37, 37, 0.068)), url(/img/beverage-citrus-close-up-1265910.jpg);
   background-position:center;
   background-size:cover;
-  background-attachment: fixed;
-  margin-top:1em;
-  padding:2em 0;
+  background-attachment: fixed; 
+}
+
+.grid-container-two{
+  height: 30em;
+  display:grid;
+  grid-template-areas:
+      "pic1 pic2"
+      "pic1 pic2";
+}
+
+.gct-one{
+  grid-area: pic1;
+  background-image: url(/img/tb4.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.gct-two{
+  grid-area: pic2;
+  background-image: url(/img/tb2.jpg);
+  background-size: cover;
+  background-position-y: 50%;
 }
 
 .b3{
@@ -459,101 +695,117 @@ width:100%;
   background-size:cover;
   background-attachment: fixed;
   height:35vh;
-  margin-top:5rem;
+  
 }
 
 .grid-container{
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto auto ;
   grid-template-rows:100px 100px 125px 125px 125px 125px;
 }
 
-.numtwo{
+.g-container{
+  position: relative;
   display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows:100px 100px 125px 125px;
-  margin-bottom:15px;
-  padding-top:1.5em;
+  grid-template-areas:
+  "slide slide pic1 pic2"
+  "slide slide pic1 pic2";
+  height: 35em;
 }
 
-.gone{
-  grid-column: 1 / span 2;
-  grid-row:1 / span 2;
-  background: url(/img/adults-alcohol-alcoholic-beverage-1304473.jpg);
+.gpic{
+  grid-area: pic1;
+  background-image: url(/img/tb4.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.gpic-two{
+  grid-area: pic2;
+  background-image: url(/img/tb2.jpg);
   background-size:cover;
+  background-position-y: 50%;
+}
+
+.gone {
+  position: relative;  
+  top:0;
+  bottom:0;
+  overflow:hidden;
+}
+
+.video{
+  position:relative;
+  height:100%;
+  width:100%;
+}
+
+.gone video{
+  min-width:100%;
+  min-height: 100%;
+  display:block;
+}
+
+.gfive {
+  grid-area: content-copy;
+  background:linear-gradient(rgba(0, 0, 0, 0.705), rgba(0, 0, 0, 0.704)), url(/img/TipsyBar5.jpg);
+  background-size: cover;
   background-position: center;
 }
 
-.gtwo{
-  grid-column: 1 ;
-  grid-row:3 / span 2;
-  background: url(/img/beverage-citrus-close-up-1265910.jpg);
-  background-size:cover;
+.gsix {
+  grid-area:pic-one;
+  background: url(/img/TipsyBar3.jpg);
+  background-size: cover;
   background-position: center;
+  padding:3em 6em;
+  position: relative;
 }
 
-.gthree{
-  grid-column: 2 ;
-  grid-row:3 / span 1;
-  background: url(/img/beverage-bubble-citrus-357577.jpg);
-  background-size:cover;
-  background-position: center;
+.gsix-container{
+  padding: 2em 2em;
+  color:white;
+  background: rgba(0, 0, 0, 0.829);
+  position:relative;
 }
 
-.gfour{
-  grid-column: 2 ;
-  grid-row:4 / span 1;
-  background: url(/img/bottle-celebration-crowd-948199.jpg);
-  background-size:cover;
-  background-position: center;
+.gsix-container li{
+  padding-bottom:1em;
+  display: flex;
+}
+.gsix-container ul{
+  padding-top:1em;
+  list-style: none;
 }
 
-.gfive{
-  grid-column: 2 ;
-  grid-row:5 / span 2;
-  background: url(/img/adult-alcoholic-beverage-bar.jpg);
-  background-size:cover;
-  background-position: center;
+.gsix-container h3{
+  color:#96cefe;/*#5c959b;*/
+  font-size:1.5rem;
+  padding: 0.1em;
+  text-transform: capitalize;
 }
 
-.gsix{
-  grid-column: 1 ;
-  grid-row:6 / span 1;
-  background: url(/img/alcohol-alcoholic-beverage-bar.jpg);
-  background-size:cover;
-  background-position: center;
+hr{
+  border:.5px solid white;  
 }
 
-.gseven{
-  grid-column: 1 ;
-  grid-row:5 / span 1;
-  background:url(/img/adult-alcohol-alcoholic-beverage.jpg);
-  background-size:cover;
+.gseven {
+  grid-area:pic-two;
+  background: url(/img/TipsyBar2.jpg);
+  background-size: cover;
   background-position: center;
+  padding:1em 6em;
+  position:relative;
 }
 
 .sone{
   background:linear-gradient(rgba(37, 37, 37, 0.808), rgba(0, 0, 0, 0)),url(/img/alcohol-bar-beer-989711.jpg);
   background-size: cover;
   background-position: center;
-}
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
-.stwo{
-  background:url(/img/adult-alcohol-alcoholic-beverage.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-.sthree{
-  background:url(/img/adult-alcoholic-beverage-bar.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-.sfour{
-  background:url(/img/alcohol-alcoholic-beverage-bar.jpg);
-  background-size: cover;
-  background-position: center;
 }
 
 .db2{
@@ -566,19 +818,37 @@ width:100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 9em;
-  
+  padding-bottom: 4em;
 }
 
 .divide-box{
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 1.75em;
-  margin-top: 5em;
+  padding-bottom: 3.5em;
+  
 }
+
+.divide-boxtwo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 3em;
+  margin-top: 2.5em;
+}
+
+.divide-boxtwo p{
+  font-size:1.5em;
+  padding: 1em .5em;
+
+}
+
+.final {
+  margin-top:6em;
+}
+
 .ques{
-  margin-top:1em;
+  margin-top:0em;
 }
 
 
@@ -586,88 +856,179 @@ width:100%;
   font-size:1.75rem;
 }
 
+.divide-boxtwo h3{
+  font-size:1.75rem;
+}
+
 .divide-box a{
   text-decoration: none;
+  color:white;
+  
+}
+
+.divide-boxtwo a{
+  text-decoration: none;
   color: rgb(111, 169, 235);
+  font-family: "Lobster", sans-serif;
 }
 
 .dbtwo{
   margin-top: 1.5em;
 }
 
-.btn a {
-  text-decoration: none;
-  padding: 13px;
-  background: linear-gradient(45deg, rgb(111, 169, 235), #86D12C);
-  color: whitesmoke;
-  
-  border-radius:6px;
-  font-size: 1rem;
-  margin-right: 0px;
+
+.howwedo .paragraph{
+  width: 60%;
 }
 
-.howedo{
-  margin-top:2em;
+.paint h2{
+  text-align:center;
+}
+
+.pevents h2{
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.paint{
+  background-image:linear-gradient(rgba(255, 255, 255, 1.000), rgba(255, 255, 255, 0.800)),url(/img/agave-beach-california.jpg);
+  background-position: center;
+  background-size:cover;
+  
+}
+
+.blue{
+  width: 100%;
+  height: auto;
+  padding: 3em 0;
+  background: dodgerblue;
+  display: flex;
+  justify-content: center;
+}
+
+.pevents{
+  background-image:linear-gradient(rgba(255, 255, 255, 1.000), rgba(255, 255, 255, 0.800)),url(/img/california.jpg);
+  background-position: center;
+  background-size:cover;
+  padding: 4em 0;
+}
+
+.story{
+  height: 100%;
+  width: 100%;
+}
+
+.testtwo p{
+  font-size:.85rem;
+  padding-bottom:.8em;
+  color:white;  
+}
+
+.testtwo h4{
+  width:95%;
+  text-align: right;
+  color:rgb(212, 231, 35);
+  text-shadow: -1px 0 rgb(44, 143, 209), 0 3px rgb(44, 143, 209), 2px 0 rgb(44, 143, 209), 0 -1px rgb(44, 143, 209);
+  text-transform: capitalize;
+}
+
+.testtwo{
+  padding:1em 3em;
+  max-width:325px;
+  color:aliceblue;  
+}
+
+.testtwo span{
+  color:rgb(212, 231, 35) ;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.testpic{
+  border-radius: 50%;
 }
 
 .test p{
   font-size:.9rem;
   padding-bottom:.8em;
+  color: white;
+  line-height: 1.5em;
 }
 
-.test h2{
+.test h3{
   width:95%;
   text-align: right;
   color:rgb(212, 231, 35);
-  text-shadow: -1px 0 rgb(44, 143, 209), 0 3px rgb(44, 143, 209), 2px 0 rgb(44, 143, 209), 0 -1px rgb(44, 143, 209);
+  /*text-shadow: -1px 0 rgb(44, 143, 209), 0 3px rgb(44, 143, 209), 2px 0 rgb(44, 143, 209), 0 -1px rgb(44, 143, 209)*/
 }
 
 .test{
-  padding:1em;
-  border: 1.5px solid #FE9C96;
-  margin: 1em auto;
-  border-radius: 6px;
-  max-width:325px;
+  padding:1.5em 9em;
+  /*--background-image:linear-gradient(rgba(20, 20, 20, 0.575), rgba(20, 20, 20, 0.575)),url(/img/tipsyparty.jpg);--*/
+  background-position: center;
+  background-size:cover;  
+  display:flex;
+  flex-direction:column;
+}
+
+.list{
+  padding-top:1em;
+}
+
+.test-two h3{
+  text-align:left;
+  color:#74c57e;
+  font-size: 1.5rem;
+  padding: .1em;
+  text-transform: capitalize;
 }
 
 .test-two h2{
-  text-align:left;
-  color:#FE9C96;
-  padding-bottom:1rem;
-}
-
-.test-two h1{
   font-size: 2.75rem;
   text-align:left;
-  color:#FE9C96;
-  padding:1rem 0;
-}
-
-.test-two-one h1{
-  text-align:right;
-  font-size: 2.75rem;
   color:#FE9C96;
   padding:1rem 0;
 }
 
 .test-two-one h2{
   text-align:right;
+  font-size: 2.75rem;
+  color:#FE9C96;
+  padding:1rem 0;
+}
+
+.test-two-one{
+  background-image:linear-gradient(rgba(20, 20, 20, 0.575), rgba(20, 20, 20, 0.575)),url(/img/beverage-citrus-close-up-1265910.jpg);
+  background-position: center;
+  background-size:cover;
+}
+
+.test-two-one h3{
+  text-align:right;
   width: 100%;
   padding-bottom:1rem;
+  font-size: 1.5rem;
 }
 
 .test-two ul {
-  list-style-type:none;
+  
   padding-bottom:1em;
+  color: white;
 }
 
 .test-two-one ul {
   list-style-type:none;
   padding-bottom:1em;
   text-align:right;
-  
 }
 
+.test-two li{
+  padding-bottom:.5em;
+}
+
+li p{
+  line-height: 1.5em;
+}
 .subtext{
   font-size:.80rem;
   padding:1.25em;
@@ -678,10 +1039,1150 @@ width:100%;
 /*--- page two ---*/
 
 .client-list{
-  height:100vh;
+  height:100%;
   background-image:linear-gradient(rgba(71, 71, 71, 0.918), rgba(0, 0, 0, 0.39)),url(/img/tipsyparty.jpg);
   position:relative;
   background-position: center;
   background-size:cover;
   background-attachment: fixed;
+}
+
+
+
+
+@media screen and (max-width:1920px){
+  
+  
+  body{
+    max-width:1920px;
+    margin:0 auto;
+    overflow-x: hidden;
+  }
+
+  .navbar {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    position: relative;
+    padding: 0 15px;
+    padding-right: 2em;
+    z-index: +1;
+    min-height: 8vh;
+    background: linear-gradient(rgba(71, 71, 71, 0.89), rgba(0, 0, 0, 0));
+    font-size: 1rem;
+    transform: translateY(-25px);
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 44%;
+    position: absolute;
+    right: 0px;
+    height: auto;
+    top: 3vh;
+    padding-top: 2em;
+    background-color: rgba(44, 143, 209, 0);
+    transform: translateX(0%);
+    transition: transform 0.5s ease-in;
+  }
+  
+  
+
+  .burger {
+    display: none;
+    z-index: +2;
+  }
+
+  .header{
+    height:100vh;
+    background-image:linear-gradient(rgba(14, 14, 14, 0.58), rgba(14, 14, 14, 0.64)),url(/img/TipsyBar.jpg);
+    position:relative;
+    background-position: center;
+    background-size:cover;
+    background-attachment: fixed;
+  }
+
+  .con {
+    height: 100%;
+    background-image: url(/img/tipsyparty.jpg);
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+  
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+    "pic-one content-copy"
+    "pic-two content-copy"
+}
+
+  .pc-2{
+    position: relative;
+    max-width:40%;
+    left: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pc-2 .title{
+    color: white;
+    text-shadow: none;
+  }
+
+  .b3{
+    background: url(/img/beverage-bubble-citrus-357577.jpg);
+    background-position:center;
+    background-size:cover;
+    background-attachment: fixed;
+    height:60vh;
+  }
+
+  .svg {
+    width: 8%;
+    height: auto;
+    margin: 0 1em;
+  }
+
+  .form {
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  .form-main {
+    position: relative;
+    margin: 0 auto;
+    width: 30%;
+  }
+
+  .contact {
+    height: auto;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.5);
+    background-position: center;
+    background-size: cover;
+    padding: 25px;
+    margin: 0 auto;
+    width: 35%;
+}
+
+  .db2 {
+    margin: 0 auto;
+    text-align: center;
+    width: 50%;
+  }
+
+  .paragraph{
+    width: 65%;
+    padding: 20px;
+    margin: 0 auto;
+    font-size: 1rem;
+    line-height: 1.75em;
+  }
+
+  .howwedo.paragraph{
+    width: 60%;
+  }
+
+  .side2side{
+    display:flex;
+  }
+
+
+  .banner {
+    width: 100%;
+    height: auto;
+    position: relative;
+    
+  }
+
+  .b2{
+    background:linear-gradient(rgba(37, 37, 37, 0.623), rgba(37, 37, 37, 0.568)), url(/img/alcohol-beer.jpg);
+    background-position:center;
+    background-size:cover;
+    background-attachment: fixed;    
+    
+  }
+
+  .b3{
+    background: url(/img/beverage-bubble-citrus-357577.jpg);
+    background-position:center;
+    background-size:cover;
+    background-attachment: fixed;
+    height:35vh;
+  }
+
+  .b4{
+    background: url(/img/beverage-bubble-citrus-357577.jpg);
+    background-position:center;
+    background-size:cover;
+    background-attachment: fixed;
+    height:35vh;
+    
+  }
+  .subtitle {
+    font-size: 1.5rem;    
+  }
+
+  .testtwo {
+    max-width: 625px;
+  }
+
+  .testtwo p {
+    font-size: 1rem;    
+  }
+
+}
+
+@media screen and (max-width:900px){
+  
+  
+  body{
+    max-width:900px;
+    margin:0 auto;
+    overflow-x: hidden;
+  }
+
+  .paragraph{
+    width: 85%;
+    padding: 20px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+  }
+
+  .grid-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows:auto auto ;
+  }
+
+  .gseven {
+    
+    
+    padding:0em;
+    
+  }
+
+  .gsix {
+    
+    padding:0em;
+    
+  }
+
+  .test{
+    padding:1.5em 3em;
+  }
+
+  .svg {
+    width: 11%;
+    height: auto;
+    margin: 0 1em;
+  }
+
+  .testtwo p {
+    font-size: .85rem;
+    padding-bottom: .8em;
+    color: aliceblue;
+  }
+
+  .contact {
+    height: auto;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.5);
+    background-position: center;
+    background-size: cover;
+    padding: 25px;
+    margin: 0 15px;
+  }
+
+  .form {
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  .b5{
+    height: 22em;    
+  }
+
+}
+
+@media screen and (max-width:767px){
+  
+  
+  body{
+    max-width:767px;
+    margin:0 auto;
+    overflow-x: hidden;
+  }
+  
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 44%;
+    position: absolute;
+    right: 0px;
+    height: 95vh;
+    top: 3vh;
+    padding-top: 2em;
+    background-color: rgba(85, 37, 130, 0.95);
+    transform: translateX(100%);
+    transition: transform 0.35s ease-in;
+  }
+
+  .hero-text-box h1{
+    font-size: 3em;
+  }
+
+  .nav-active{
+    transform: translate(0%)
+  }
+  
+  .nav-links a {
+    opacity: 0; 
+  }
+  
+  .burger {
+    display: block;
+    z-index: +2;
+  }
+
+  .burger div{
+    transition: all 0.3s ease;
+  }
+
+  .toggle .line1{
+    transform: rotate(-45deg) translate(-5px, 4px);
+  }
+   
+  .toggle .line2{
+    opacity: 0;
+  }
+   
+  .toggle .line3{
+    transform: rotate(45deg) translate(-5px, -5px);
+  }
+
+
+  .sone .paragraph {
+    width: 75%;
+    
+  }
+  .paragraph{
+    width: 75%;
+    margin: 0 auto;   
+  }
+
+  .pc-2 {
+    position: relative;
+    max-width: 90%;
+    
+  }
+
+  .svg {
+    width: 15%;
+    height: auto;
+    margin: 0 1em;
+  }
+
+  .test{
+    padding:1.5em 2em;
+    background-position: center;
+    background-size:cover;  
+    display:flex;
+    flex-direction:column;
+  }
+
+
+
+  .test h2 {
+    width: 95%;
+    text-align: right;
+    color: rgb(212, 231, 35);
+  }
+
+  .test-two h2 {
+    text-align: left;
+    color: #FE9C96;
+    padding-bottom: 1rem;
+  }
+
+  .form-main {    
+    width: 75%;
+  }
+
+}
+
+@media screen and (max-width:520px){
+  *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+  }
+  
+  html{
+    background-color:#fefefe;
+    overflow-x: hidden;
+  }
+  
+  body{
+    max-width:480px;
+    margin:0 auto;
+    overflow-x: hidden;
+  }
+
+  .hero-text-box{
+    font-size:1rem;
+  }
+
+  .video{
+    position:relative;
+    height:auto;
+    width:100%;
+  }
+  
+  .hero-text-box h1 {    
+    font-size: 2em;    
+  }
+
+  h1{
+    font-size:250%;
+    line-height:.9em;
+  }
+    
+  h2{
+    font-size:2.5em;
+  }
+  
+  #logo img{
+    width:145px;
+    height:auto;
+    
+  }
+  
+  .logo img{
+    width:200px;
+    height:auto; 
+  }
+  
+  .logo {
+    position: relative;
+    transform: translate(-50%, 15%);
+    top: 10%;
+    left: 50%;
+  }
+  
+   .toggle .line1{
+    transform: rotate(-45deg) translate(-5px, 4px);
+   }
+   
+   .toggle .line2{
+     opacity: 0;
+   }
+   
+   .toggle .line3{
+     transform: rotate(45deg) translate(-5px, -5px);
+   }
+  
+  
+  
+  
+  .burger{
+    display:block;
+    z-index: +2;
+  }
+  
+  
+  .burger div{
+    width:25px;
+    height:2px;
+    background-color:white;
+    margin:5px;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-active{
+    transform: translate(0%)
+  }
+  
+  .navbar a{ 
+    display:block;
+    float:right;
+    color:aliceblue;
+    text-decoration:none;
+    
+  }
+  
+  .nav-links a {
+    opacity: 0; 
+  }
+
+  @keyframes navLinkFade{
+    from{
+      opacity: 0;      
+      transform: translateX(50px);
+    }
+
+    to{
+      opacity: 1;      
+      transform: translateX(0px);
+    }
+  }
+
+
+
+  .navbar a:hover{
+    color:rgba(26, 243, 55, 0.938);
+  }
+  
+  .svg{
+    height:auto;
+    margin:0 1em;
+  }
+  
+ 
+  
+  .hero-text-box h2{
+    font-family:"Lobster", cursive;
+    font-size: 2.5rem;
+    text-shadow: -1px 0 #FE9C96, 0 3.5px #FE9C96, 2.5px 0 #FE9C96, 0 -1px #FE9C96;
+  }
+  
+  .hero-text-box h4{
+    padding-bottom:1.5em;
+  }
+  
+  .thanks{
+    position:relative;
+    left:5%;
+    top:8%
+  }
+
+  .g-container{
+    height: 100%;
+    grid-template-areas: 
+    "pic1 pic2"
+    "slide slide ";
+  }
+  
+  
+
+  .blue{
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .testpic{
+    margin-bottom:1em;
+  }
+  /*--- titles---*/
+  /*--- titles---*/
+  /*--- titles---*/
+  
+  
+ 
+  
+  .subtitle{
+    font-family: 'Comfortaa', cursive;
+    font-size:1.2rem;
+    color:rgb(24, 24, 24);
+    
+    padding-top:3em;
+    text-align: center;
+    
+  }
+  
+  .subtitle h2{
+    font-family:'Comfortaa', cursive;
+    white-space: nowrap;
+    width:100%;
+    overflow: auto;
+    margin:0 auto;
+    font-weight:bold;
+  }
+  
+  .index h1{
+    color:rgb(27, 27, 27);
+  }
+  
+  .story h4{
+    color:#FE9C96;
+  }
+  
+  /*--- buttons---*/
+  /*--- buttons---*/
+  /*--- buttons---*/
+  
+  .newbtn{
+    border:2px solid rgb(111, 169, 235);
+    border-radius:6px;
+    padding:10px 20px;
+  
+  }
+  
+  .newbtn a{
+    text-decoration:none;
+    color: #ffffff;
+  }
+  
+  .newbtn:hover {
+    background:whitesmoke;    
+    transition-duration:.5s;
+  }
+  
+  .newbtn:hover a{
+    
+    color:rgba(102, 188, 228);
+  }
+  
+  .btn a {
+    text-decoration: none;
+    padding: 13px;
+    background: linear-gradient(45deg, rgb(111, 169, 235), #86D12C);
+    color: whitesmoke;  
+    border-radius:6px;
+    font-size: 1rem;
+    margin-right: 0px;
+  }
+  
+  .bar a{
+    background: red;
+    margin-bottom:50px;
+    padding: 13px 30px;
+    text-decoration:none;
+    color:whitesmoke;
+    border-radius: 6px;
+  }
+  
+  .bar{
+    margin:2em auto;  
+    display:inline-block;
+  }
+  
+  .list ul{
+    padding-bottom:2em;
+  }
+  
+  .web a{
+    color:white;
+  }
+  /*--- contact---*/
+  /*--- contact---*/
+  /*--- contact---*/
+  .contact{
+    height: auto;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.750);
+    
+    background-position: center;
+    background-size: cover;
+    padding: 25px;
+    margin: 0 auto;
+    width: 80%;
+  }
+  
+  .contact-form h1{
+    margin:0;
+    font-size:2rem;
+    
+  }
+  
+  .contact-form p{
+    margin:10px auto;
+    width:auto;
+    font-size:1.2rem;
+    font-weight:800;
+    
+  }
+  
+  .form{
+  position: relative;
+  margin:0 auto;
+  width:100%;
+  
+  }
+    
+  ::placeholder{
+    color:black;
+    font-size:1rem;    
+  }
+
+  #submit{ 
+    padding:10px;
+    background:rgb(15, 148, 15);
+    color:whitesmoke;
+    border-radius: 6px;
+    font-size: 1rem;
+    width:100%;
+  }
+  
+  #submit:hover{
+    background:rgb(71, 177, 243);
+    transition-duration: .5s;
+  }
+  
+  .form-main {
+    width: 75%;
+  }
+  
+  footer{
+    height:auto;
+    background: rgb(45, 161, 228);
+    padding:20px 0;
+    
+  }
+  
+  .con{
+    height:100%;
+    background-image:url(/img/tipsyparty.jpg);
+    position:relative;
+    background-position: center;
+    background-size:cover;
+    background-attachment: fixed;
+  }
+  
+  .footer{
+    margin:0 auto;
+    width:90%;
+    font-size:1rem;
+    color:aliceblue;
+    text-align: center;
+    position:relative;
+    flex-direction: column;
+    }
+
+  .footer-links {
+    padding-bottom: 1em;
+    justify-content: center;
+  }
+
+  .footer-link img{
+    width:30%;
+  }
+
+
+  /*-- reusable components--*/
+  /*-- reusable components--*/
+  /*-- reusable components--*/
+  /*-- reusable components--*/
+  .float{
+    animation-name:float;
+    animation-duration:4s;
+    animation-iteration-count: infinite;
+    animation-timing-function:ease-in-out;  
+    margin-top:5px;
+  }
+  
+  @keyframes float {
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(0, 15px); }
+    to   { transform: translate(0, -0px); }    
+  }
+  
+  
+  
+  .paragraph-container {
+    padding: 3em 0;
+  }
+  
+  .paragraph{
+    width:100%;
+    line-height: 1.5;
+  }
+  
+  .inline{
+    text-align:center;
+    padding-bottom:2.5em;
+  }
+  
+  .b2 .paragraph{
+    line-height: 1.2;
+  }
+  
+  .sone .paragraph {
+    width: auto;
+    padding: 20px 40px;
+    position: relative;
+    top: 4%;
+    left: 0;
+    color: white;
+  }
+  
+  .spacer{
+    height: 75px;
+    width:100%;
+  }
+  
+  
+  .spacer-two{
+    height: 30px;
+    width:100%;
+  }
+  
+  .btext{
+    position:relative;
+    width:100%;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    color:aliceblue;
+    margin-left:1em;
+  }
+  
+  .btext p{
+    font-family:'Comfortaa', cursive;
+    margin: 0 auto;
+    font-size:1.25rem;
+    color:white;
+  
+  }
+  
+  /*---one offs---*/
+  /*---one offs---*/
+  /*---one offs---*/
+  
+  .banner{
+    width:100%;
+    height: 13em;
+    background:url(/img/tipsymoscow.jpg);
+    background-position:center;
+    background-size:cover;
+    position:relative;
+    background-attachment: fixed;
+  }
+  
+  .b2{
+    background:linear-gradient(rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.521)), url(/img/TipsyBar6.jpg);
+    background-position:center;
+    background-size:cover;
+    background-attachment: fixed;
+    height:auto;
+    padding:2em 0;
+  }
+
+  .s2{
+    background:linear-gradient(rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.521)), url(/img/alcohol-beer.jpg); 
+    background-position:center;
+    background-size:cover;
+  }
+   
+  .b3{
+    background: url(/img/beverage-bubble-citrus-357577.jpg);
+    background-position:center;
+    background-size:cover;
+    background-attachment: fixed;
+    height:35vh;
+  }
+  
+  .b4{
+    background: url(/img/beverage-bubble-citrus-357577.jpg);
+    background-position:center;
+    background-size:cover;
+    background-attachment: fixed;
+    height:35vh;
+    
+  }
+
+  .slide-container-container{
+    position: relative;
+  }
+
+  .slide-container{
+    position: relative;
+    width: 100%;
+    height: 13em;
+    overflow: hidden;
+  }
+
+  .slide{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: opacity .5s ease-in-out;
+  }
+
+  .slide.current{
+    opacity: 1;
+  }
+
+  
+
+  .buttons{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 1;
+    width:100%;
+    transform: translate(0, -50%);
+    top: 50%;
+  }
+
+  .bbtn{
+    cursor: pointer;
+  }
+  
+  .gpic {
+    height: 10em;
+  }
+
+
+  
+  .grid-container{
+    
+    grid-template-columns: auto;
+    grid-template-rows: auto ;
+    grid-template-areas:
+    "content-copy "
+    "pic-one "
+    "pic-two ";
+    grid-template-rows:  auto auto auto;
+  }
+
+  .gseven {
+    padding:0em;
+  }
+
+  .gsix {
+    padding:0em;
+  }
+  
+  
+  .gone {
+    top:0;
+    left:0;
+    width: 100%;
+    position: relative;
+    display: block;
+  }
+
+  .sone{
+    background:linear-gradient(rgba(37, 37, 37, 0.808), rgba(0, 0, 0, 0)),url(/img/alcohol-bar-beer-989711.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    padding:2em 0;
+  }
+
+  .grid-container-two{
+    height: 10em;
+  }  
+
+  .end-box{
+    padding-top:4em;
+  }
+
+  .db2{
+    margin:0 auto;
+    text-align:center;
+  }
+  
+  .dbthree{
+    margin-top:1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 4em;
+  }
+  
+  .divide-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 3.5em;
+  }
+  
+  .divide-boxtwo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2em;
+    margin-top: 2.5em;
+  }
+  
+  .ques{
+    margin-top:1em;
+  }
+  
+
+  
+  .divide-box h3{
+    font-size:1.75rem;
+  }
+  
+  .divide-boxtwo h3{
+    font-size:1.75rem;
+  }
+  
+  .divide-box a{
+    text-decoration: none;
+    color:white;
+    
+  }
+  
+  .divide-boxtwo a{
+    text-decoration: none;
+    color: rgb(111, 169, 235);
+  }
+  
+  .dbtwo{
+    margin-top: 1.5em;
+  }
+  
+  .side2side{
+    display:block;
+  }
+  
+  .testtwo h2{
+    width:95%;
+    text-align: right;
+    color:rgb(212, 231, 35);
+    text-shadow: -1px 0 rgb(44, 143, 209), 0 3px rgb(44, 143, 209), 2px 0 rgb(44, 143, 209), 0 -1px rgb(44, 143, 209);
+  }
+  
+ 
+  
+  .test p{
+    font-size:.9rem;
+    padding-bottom:.8em;
+    line-height: 1.5em;
+  }
+  
+  .test h2{
+    width:95%;
+    text-align: right;
+    color:rgb(212, 231, 35);
+    
+  }
+  
+  .test{
+    padding:1.5em;
+    background-position: center;
+    background-size:cover;  
+    display:flex;
+    flex-direction:column;
+  }
+  
+  
+  
+  .test-two h2{
+    text-align:left;
+    color:#FE9C96;
+    padding-bottom:1rem;
+  }
+  
+  .test-two h1{
+    font-size: 2.75rem;
+    text-align:left;
+    color:#FE9C96;
+    padding:1rem 0;
+  }
+  
+  .test-two-one h1{
+    text-align:right;
+    font-size: 2.75rem;
+    color:#FE9C96;
+    padding:1rem 0;
+  }
+  
+  .test-two-one{
+    background-image:linear-gradient(rgba(20, 20, 20, 0.575), rgba(20, 20, 20, 0.575)),url(/img/beverage-citrus-close-up-1265910.jpg);
+    background-position: center;
+    background-size:cover;
+  }
+  
+  .test-two-one h2{
+    text-align:right;
+    width: 100%;
+    padding-bottom:1rem;
+  }
+  
+  .test-two ul {
+    list-style-type:none;
+    padding-bottom:1em;
+  }
+  
+  .test-two-one ul {
+    list-style-type:none;
+    padding-bottom:1em;
+    text-align:right;
+    
+  }
+  
+  li p{
+    color:white;
+  }
+  .subtext{
+    font-size:.80rem;
+    padding:1.25em;
+    text-align:center;
+    margin-bottom:5.5em;
+  }
+  
+
+
+  /*--- page two ---*/
+  
+  .client-list{
+    height:100%;
+    background-image:linear-gradient(rgba(71, 71, 71, 0.918), rgba(0, 0, 0, 0.39)),url(/img/tipsyparty.jpg);
+    position:relative;
+    background-position: center;
+    background-size:cover;
+    background-attachment: fixed;
+    text-align: center;
+  }
+}
+
+.jsquare{
+  position: relative;
+  width: 60%;
+  margin: 4em auto;
+  padding: 1em;
+  background: rgba(245, 245, 245, 0.726);
+  border-radius: 6px;
+  
+}
+
+.jsquare h2{
+  margin-bottom: .75em;
+}
+
+.square h2{
+  margin-bottom: .75em;
+}
+
+.square{
+  width: 60%;
+  margin: 4em auto;
+  padding: 1em;
+  background: rgba(245, 245, 245, 0.726);
+  border-radius: 6px;
+}
+
+.btnbtn a {
+  text-decoration: none;
+  padding: 7px;
+  background: linear-gradient(45deg, rgb(111, 169, 235), #86D12C);
+  color: whitesmoke;  
+  border-radius:6px;
+  font-size: 1rem;
+  display: inline-block;
+  margin-top:1em;
 }

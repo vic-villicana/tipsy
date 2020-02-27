@@ -3,15 +3,12 @@
   <% include partials/nav %>
   <% job.forEach(function(job){ %>
     <div class="jsquare">
-        <h3><%=job.name%></h3>
-        <h4><%=job.option%></h4>
-        <h4><%=job.email%></h4>
-    
-        <div>
-          <P><%=job.description%></P>
-        </div>    
+        <h2><%=job.name%></h2>
+        <h4><%=job.option%></h4>            
+        <p>
+          <btn class="btnbtn"><a href="/clients/<%=job._id%>">More Info</a></btn>
+        </p>    
       </div>
- <% });%>
-  
+ <% });%>  
 </header>
 <% include partials/footer %>

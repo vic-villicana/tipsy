@@ -1,0 +1,22 @@
+<section>
+    <div class="contact-form index">
+      <div class="logo">            
+              <img alt="logo" src="/img/tipsylogo.png">         
+      </div>
+      <h3>Keep in touch</h3>
+      <p>Sign up for our newsletter and get exclusive offers!</p>
+      <%- messages() %>
+      <div class="form-main" >
+      <form action="/signups" method="POST">
+        <label for="email"></label>
+      <input type="text" id="email" name="email" placeholder="E-Mail Address">        
+      <input id='submit'  type="submit" value="Submit!">
+      </form>            
+      </div>
+    </div>  
+    <div class="subtext">
+        <p>
+          we respect your privacy
+        </p>
+    </div>
+  </section>

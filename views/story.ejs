@@ -1,83 +1,67 @@
 <% include partials/header %>
   <header class="header two">
       <% include partials/nav %>
-        <div class="hero-text-box story">
-            <h2>Our Story</h2>
-            <h4>Because whats a good drink<br/> without a good story?</h4>
-            <div class="float">
-              <btn class="btn"><a href="contact">Book now!</a></btn>    
-            </div>
+        <div class="hero-text-box">
+            <h1>Our Story Begins <br> With Our Clients</h1>
+            
                     
         </div>
   </header>
-  <section>
-    <div class="title">
-      <h1>Our<br/>Mission</h1>
-    </div>
-    <div class="paragraph">
-      <p>
-        Elit adipisicing enim ea laboris est Lorem ullamco. Exercitation velit labore incididunt aliqua labore in. Est commodo do consectetur ad. 
-      </p>
-    </div>
-    <div class="banner">
-
-    </div>
-    <div class="paragraph">
+  <section class="pc-mission">
+    <div class="paragraph-container ">
+      <div class="title black">
+        <h2>Our Mission</h2>
+      </div>
+      <div class="paragraph">
+        <p>
+            Elit adipisicing enim ea laboris est Lorem ullamco. Exercitation velit labore incididunt aliqua labore in. Est commodo do consectetur ad. 
+            Ipsum elit labore voluptate veniam laborum. Velit elit et voluptate ad id. Cillum mollit sit deserunt deserunt do anim et laborum. Ea quis id esse nostrud cupidatat Cupidatat cillum in in sint Lorem. 
+        </p>
+      </div>
+      <div class="paragraph">
         <p>
           In exercitation id sunt enim duis occaecat ea do minim aliqua excepteur qui enim Lorem. Amet sint dolore do duis occaecat veniam officia commodo eiusmod laboris ex.
         </p>
       </div>
-      <div class="paragraph">
-          <p>
-            Elit adipisicing enim ea laboris est Lorem ullamco. Exercitation velit labore incididunt aliqua labore in. 
-          </p>
-        </div>
-      <div class="divide-box ques">
-        <h3><a href="#">any questions?</a></h3>
-      </div>
-  </section>
-  <section class="pevents">
-    <div class="title">
-      <h1>The<br/>Culture</h1>  
-    </div>
-    
-    <div class="grid-container numtwo">
-      <div class="gone sone">
-        <div class="paragraph">
-          <p>
-            Non laboris elit adipisicing cupidatat cillum ut. Fugiat ut aliqua laboris non sint sunt est commodo. ullamco qui dolore minim elit Commodo nulla non.
-          </p>
-        </div>
-      </div>
-      <div class="gtwo stwo"></div>
-      <div class="gthree sthree"></div>
-      <div class="gfour sfour"></div>
-    </div>
-    <div class="paragraph">
-      <p>
-        Elit adipisicing enim ea laboris est Lorem ullamco. Exercitation velit labore incididunt aliqua labore in. Est commodo do consectetur ad. 
-      </p>
-    </div>
-    <div class="float">
-      <div class="divide-box dbtwo"><btn class="btn web"><a href="contact">Talk to Us!</a></btn></div>
-  </div>
-  <div class="spacer"></div>
-  </section>
-  <section >
-    <div class="contact-form index">
-      <h1>Keep in touch</h1>
-      <p>sign up for our newsletter and get exclusive offers!</p>
-      <div class="form" >
-      <form action="/signups" method="POST">
-      <input type="text" id="email" name="email" placeholder="E-Mail Address">        
-      <input id='submit'  type="submit" value="Holla!">
-      </form>            
+      <div class="divide-boxtwo ques">
+        <h3><a href="/contact">Ask Us Anything!</a></h3>
       </div>
     </div>  
-    <div class="subtext">
-        <p>
-          we respect your privacy
-        </p>
+    <div class="banner">
+    </div>   
+  </section>
+  <section class="story">
+    <div class="banner b2 s2">
+      <div class="paragraph-container pc-2">
+        <div class="title">
+          <h2>The<br/>Culture</h2>
+        </div>
+          <div class="paragraph">
+            <p>
+              Non laboris elit adipisicing cupid cillum ut. Fugiat ut aliqua laboris non sint sunt est commodo. Consectetur amet enim tempor elit enim excepteur.Et incididunt laborum irure ut ex laboris aliqua cupidatat aliqua adipisicing fugiat cupidatat id pariatur.
+            </p>
+          </div>        
+      </div>
+    </div>
+    <div class="grid-container-two">
+      <div class="gct-one"></div>
+      <div class="gct-two"></div>
     </div>
   </section>
+  <section class="end">
+    <div class="end-box">
+      <div class="title black">
+        <h3>New title </h3>
+      </div>
+      <div class="paragraph">           
+        <p>
+          Elit adipisicing enim ea laboris est Lorem ullamco. Exercitation velit labore incididunt aliqua labore in. Est commodo do consectetur ad.Occaecat mollit non consequat consectetur id aliquip. <br/> 
+        </p>
+      </div>
+      <div class="float">
+        <div class="dbthree"><btn class="btn web"><a href="contact">Contact Us!</a></btn></div>
+      </div>
+    </div>
+  </section>
+  <% include partials/form %>
   <% include partials/footer %>
