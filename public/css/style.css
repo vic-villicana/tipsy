@@ -14,6 +14,7 @@ html{
   font-size:16px;
   font-weight:300;
   overflow-x: hidden;
+  box-sizing:border-box;
 }
 
 body{
@@ -37,6 +38,7 @@ h1{
 h2{
   font-family: 'montserrat', cursive;
     font-size: 3em;
+    text-transform: capitalize;
 }
 
 #logo img{
@@ -163,19 +165,19 @@ h2{
 .hero-text-box{
   position:absolute;
   width:100%;
-  left:50%;
-  top:50%;
-  transform: translate(-50%, -50%);
   color:aliceblue;
   text-align: center;
   font-size: 1.25rem;
   display:inline-block;
+  top: 35%;
 }
 
 .hero-text-box h1{
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Lemonada', cursive;
+
   font-size: 4em;
   line-height: 1.2em;
+  text-transform: capitalize;
 }
 
 .hero-text-box h4{
@@ -210,21 +212,21 @@ h2{
 }
 
 .subtitle{
-  font-family: 'Comfortaa', cursive;
-  font-size:1rem;
-  color:rgb(155, 231, 62);  
+  font-family: 'montserrat', cursive;
+  font-size:1rem;  
   text-align: center;
   padding-top: 4em;
 }
 
 .subtitle h3{
-  font-family:'Comfortaa', cursive;
+  font-family:'montserrat', cursive;
   white-space: nowrap;
   width:100%;
   overflow: auto;
   margin:0 auto;
   font-weight:bold;
   font-size: 1.5em;
+  text-transform: capitalize;
 }
 
 .index h1{
@@ -235,7 +237,7 @@ h2{
 
 .story h4{
   color:#FE9C96;
-  font-family: "comfortaa", cursive;
+  font-family: "montserrat", cursive;
 }
 
 
@@ -334,12 +336,13 @@ h2{
 
 .contact-form label{
   margin-top:1em;
+  font-family: "montserrat", sans-serif;
 }
 
 .contact-form h3{
   margin:0;
   font-size:2rem;
-  
+  text-transform: capitalize;
 }
 
 .contact-form p{
@@ -359,6 +362,7 @@ width:100%;
 
 #start{
   margin-top:0em;
+  font-size: 1rem;
 }
 
 #email{
@@ -393,7 +397,7 @@ select{
 ::placeholder{
   color:black;
   font-size:1rem;
-  font-family:"comfortaa", cursive;
+  font-family:"Montserrat", cursive;
   
 }
 .contact-form textarea{
@@ -407,7 +411,7 @@ select{
 
 
 #submit{ 
-  font-family:'Comfortaa', cursive;
+  font-family:'Montserrat', cursive;
   padding:10px;
   background:rgb(15, 148, 15);
   color:whitesmoke;
@@ -425,8 +429,9 @@ select{
 footer{
   height:auto;
   background: rgb(45, 161, 228);
-  padding:20px 0;
+  padding: 30px 0 15px 0;
   position: relative;
+  text-align: center;
 }
 
 .con{
@@ -440,11 +445,25 @@ footer{
 
 .footer{
   margin:0 auto;
-  width:75%;
+  width:90%;
   font-size:1.25rem;
   color:aliceblue;
-  text-align: center;
+  display: flex;
+  justify-content:space-between;
   position:relative;
+  }
+
+  .footer-links{
+    display: flex;
+  }
+
+  .footer-links a{
+    text-decoration: none;
+    color: white;
+  }
+
+  .footer-link {
+    padding-right: 1em;
   }
 
 .footer h5{
@@ -557,13 +576,14 @@ width:100%;
 /*---slider---*/
 
 .slide-container-container{
+  grid-area:slide;
   position: relative;
 }
 
 .slide-container{
   position: relative;
   width: 100%;
-  height:28em;
+  height:100%;
   overflow: hidden;
 }
 
@@ -582,19 +602,19 @@ width:100%;
 }
 
 .slide:first-child{
-  background: url(/img/alcohol-bar-beer-989711.jpg);
+  background: url(/img/TipsyBar7.jpg);
   background-position: center;
   background-size: cover;
 }
 
 .slide:nth-child(2){
-  background:url(/img/alcohol-alcoholic-beverage-bar.jpg) ;
+  background:url(/img/TipsyBar5.jpg) ;
   background-position: center;
   background-size:cover;
 }
 
 .slide:nth-child(3){
-  background: url(/img/adults-alcohol-alcoholic-beverage-1304473.jpg);
+  background: url(/img/tb1.jpg);
   background-position: center;
   background-size:cover;
 }
@@ -618,6 +638,10 @@ width:100%;
 /*---one offs---*/
 /*---one offs---*/
 
+.end-box{
+  padding:4em 0 3em 0;
+}
+
 .banner{
   width:100%;
   height: 13em;
@@ -632,8 +656,29 @@ width:100%;
   background:linear-gradient(rgba(37, 37, 37, 0.288), rgba(37, 37, 37, 0.068)), url(/img/beverage-citrus-close-up-1265910.jpg);
   background-position:center;
   background-size:cover;
-  background-attachment: fixed;
-  
+  background-attachment: fixed; 
+}
+
+.grid-container-two{
+  height: 30em;
+  display:grid;
+  grid-template-areas:
+      "pic1 pic2"
+      "pic1 pic2";
+}
+
+.gct-one{
+  grid-area: pic1;
+  background-image: url(/img/tb4.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.gct-two{
+  grid-area: pic2;
+  background-image: url(/img/tb2.jpg);
+  background-size: cover;
+  background-position-y: 50%;
 }
 
 .b3{
@@ -655,36 +700,31 @@ width:100%;
 
 .grid-container{
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto auto ;
   grid-template-rows:100px 100px 125px 125px 125px 125px;
 }
 
 .g-container{
   position: relative;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  height: 25em;
+  grid-template-areas:
+  "slide slide pic1 pic2"
+  "slide slide pic1 pic2";
+  height: 35em;
 }
 
 .gpic{
-  grid-column: 1;
-  background-image: url(/img/alcohol-bar-beer-989711.jpg);
+  grid-area: pic1;
+  background-image: url(/img/tb4.jpg);
   background-position: center;
   background-size: cover;
 }
 
 .gpic-two{
-  grid-column: 2;
-  background-image: url(/img/TipsyBar4.jpg);
+  grid-area: pic2;
+  background-image: url(/img/tb2.jpg);
   background-size:cover;
-}
-
-.numtwo{
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows:100px 100px 125px 125px;
-  margin-bottom:15px;
-  
+  background-position-y: 50%;
 }
 
 .gone {
@@ -705,29 +745,6 @@ width:100%;
   min-height: 100%;
   display:block;
 }
-.gtwo{
-  grid-column: 1 ;
-  grid-row:1 / span 2;
-  background: url(/img/beverage-citrus-close-up-1265910.jpg);
-  background-size:cover;
-  background-position: center;
-}
-
-.gthree{
-  grid-column: 2 ;
-  grid-row:1 / span 1;
-  background: url(/img/beverage-bubble-citrus-357577.jpg);
-  background-size:cover;
-  background-position: center;
-}
-
-.gfour{
-  grid-column: 2 ;
-  grid-row:2 / span 1;
-  background: url(/img/bottle-celebration-crowd-948199.jpg);
-  background-size:cover;
-  background-position: center;
-}
 
 .gfive {
   grid-area: content-copy;
@@ -738,10 +755,10 @@ width:100%;
 
 .gsix {
   grid-area:pic-one;
-  background: url(/img/TipsyBar4.jpg);
+  background: url(/img/TipsyBar3.jpg);
   background-size: cover;
   background-position: center;
-  padding:0em 6em;
+  padding:3em 6em;
   position: relative;
 }
 
@@ -750,8 +767,6 @@ width:100%;
   color:white;
   background: rgba(0, 0, 0, 0.829);
   position:relative;
-  transform: translate( 0, -50%);
-  top:50%;
 }
 
 .gsix-container li{
@@ -767,6 +782,7 @@ width:100%;
   color:#96cefe;/*#5c959b;*/
   font-size:1.5rem;
   padding: 0.1em;
+  text-transform: capitalize;
 }
 
 hr{
@@ -778,7 +794,7 @@ hr{
   background: url(/img/TipsyBar2.jpg);
   background-size: cover;
   background-position: center;
-  padding:0em 6em;
+  padding:1em 6em;
   position:relative;
 }
 
@@ -789,24 +805,7 @@ hr{
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
 
-.stwo{
-  background:url(/img/adult-alcohol-alcoholic-beverage.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-.sthree{
-  background:url(/img/adult-alcoholic-beverage-bar.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-.sfour{
-  background:url(/img/alcohol-alcoholic-beverage-bar.jpg);
-  background-size: cover;
-  background-position: center;
 }
 
 .db2{
@@ -827,7 +826,7 @@ hr{
   flex-direction: column;
   align-items: center;
   padding-bottom: 3.5em;
-  margin-top: 4em;
+  
 }
 
 .divide-boxtwo{
@@ -888,6 +887,7 @@ hr{
 
 .pevents h2{
   text-align: center;
+  text-transform: capitalize;
 }
 
 .paint{
@@ -913,6 +913,11 @@ hr{
   padding: 4em 0;
 }
 
+.story{
+  height: 100%;
+  width: 100%;
+}
+
 .testtwo p{
   font-size:.85rem;
   padding-bottom:.8em;
@@ -924,6 +929,7 @@ hr{
   text-align: right;
   color:rgb(212, 231, 35);
   text-shadow: -1px 0 rgb(44, 143, 209), 0 3px rgb(44, 143, 209), 2px 0 rgb(44, 143, 209), 0 -1px rgb(44, 143, 209);
+  text-transform: capitalize;
 }
 
 .testtwo{
@@ -957,7 +963,7 @@ hr{
 }
 
 .test{
-  padding:1.5em 7em;
+  padding:1.5em 9em;
   /*--background-image:linear-gradient(rgba(20, 20, 20, 0.575), rgba(20, 20, 20, 0.575)),url(/img/tipsyparty.jpg);--*/
   background-position: center;
   background-size:cover;  
@@ -974,6 +980,7 @@ hr{
   color:#74c57e;
   font-size: 1.5rem;
   padding: .1em;
+  text-transform: capitalize;
 }
 
 .test-two h2{
@@ -1191,26 +1198,17 @@ li p{
   .side2side{
     display:flex;
   }
-  .numtwo {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: 16em 16em;
-    margin-bottom: 15px;
-    
-}
+
 
   .banner {
     width: 100%;
     height: auto;
-    background: url(/img/tipsymoscow.jpg);
-    background-position: center;
-    background-size: cover;
     position: relative;
-    background-attachment: fixed;
+    
   }
 
   .b2{
-    background:linear-gradient(rgba(37, 37, 37, 0.623), rgba(37, 37, 37, 0.568)), url(/img/beverage-citrus-close-up-1265910.jpg);
+    background:linear-gradient(rgba(37, 37, 37, 0.623), rgba(37, 37, 37, 0.568)), url(/img/alcohol-beer.jpg);
     background-position:center;
     background-size:cover;
     background-attachment: fixed;    
@@ -1234,10 +1232,7 @@ li p{
     
   }
   .subtitle {
-    font-family: 'Comfortaa', cursive;
-    font-size: 1.5rem;
-    color: rgb(155, 231, 62);
-    text-align: center;
+    font-size: 1.5rem;    
   }
 
   .testtwo {
@@ -1289,12 +1284,6 @@ li p{
     padding:1.5em 3em;
   }
 
-  .numtwo {
-    display: grid;
-    grid-template-columns: auto auto;
-    margin-bottom: 15px;
-    
-  }
   .svg {
     width: 11%;
     height: auto;
@@ -1349,9 +1338,13 @@ li p{
     height: 95vh;
     top: 3vh;
     padding-top: 2em;
-    background-color: rgba(44, 143, 209, 0.705);
+    background-color: rgba(85, 37, 130, 0.95);
     transform: translateX(100%);
     transition: transform 0.35s ease-in;
+  }
+
+  .hero-text-box h1{
+    font-size: 3em;
   }
 
   .nav-active{
@@ -1406,8 +1399,7 @@ li p{
   }
 
   .test{
-    padding:1.5em 1em;
-    
+    padding:1.5em 2em;
     background-position: center;
     background-size:cover;  
     display:flex;
@@ -1434,7 +1426,7 @@ li p{
 
 }
 
-@media screen and (max-width:480px){
+@media screen and (max-width:520px){
   *{
     margin:0;
     padding:0;
@@ -1443,10 +1435,6 @@ li p{
   
   html{
     background-color:#fefefe;
-    text-rendering: optimizeLegibility;
-    font-family: 'Poppins', sans-serif;
-    font-size:16px;
-    font-weight:300;
     overflow-x: hidden;
   }
   
@@ -1454,6 +1442,10 @@ li p{
     max-width:480px;
     margin:0 auto;
     overflow-x: hidden;
+  }
+
+  .hero-text-box{
+    font-size:1rem;
   }
 
   .video{
@@ -1493,8 +1485,6 @@ li p{
     left: 50%;
   }
   
-
-  
    .toggle .line1{
     transform: rotate(-45deg) translate(-5px, 4px);
    }
@@ -1508,21 +1498,7 @@ li p{
    }
   
   
-  .nav-links{
-    display:flex;
-    flex-direction: column;
-    align-items:center;
-    justify-content:space-around;
-    width:44%;
-    position:absolute;  
-    right:0px;
-    height:95vh;
-    top: 3vh;     
-    padding-top:2em;   
-    background-color:rgba(44, 143, 209, 0.705);;
-    transform: translateX(100%);
-    transition:transform 0.35s ease-in;   
-  }
+  
   
   .burger{
     display:block;
@@ -1596,9 +1572,14 @@ li p{
   }
 
   .g-container{
-    height: 10em;
+    height: 100%;
+    grid-template-areas: 
+    "pic1 pic2"
+    "slide slide ";
   }
   
+  
+
   .blue{
     flex-direction: column;
     align-items: center;
@@ -1637,16 +1618,9 @@ li p{
     color:rgb(27, 27, 27);
   }
   
-  .story h2{
-    font-family:'lobster', cursive;
-    font-size:2.5rem;
-    text-shadow: -1px 0 #FE9C96, 0 3.5px #FE9C96, 2.5px 0 #FE9C96, 0 -1px #FE9C96;
-  }
-  
   .story h4{
     color:#FE9C96;
   }
-  
   
   /*--- buttons---*/
   /*--- buttons---*/
@@ -1740,32 +1714,13 @@ li p{
   width:100%;
   
   }
-  
-  
-  
-  input{
-    margin:1em 0;
-  }
-  
-  
+    
   ::placeholder{
     color:black;
-    font-size:1rem;
-    font-family:"comfortaa", cursive;
-    
+    font-size:1rem;    
   }
-  textarea{
-    width:90%;
-    margin-top:40px;
-    background:rgba(0, 0, 0, 0);
-    border:none;
-    font-size:1.5rem;
-    border-bottom:1px solid rgb(107, 107, 219);
-  }
-  
-  
+
   #submit{ 
-    font-family:'Comfortaa', cursive;
     padding:10px;
     background:rgb(15, 148, 15);
     color:whitesmoke;
@@ -1801,12 +1756,24 @@ li p{
   
   .footer{
     margin:0 auto;
-    width:75%;
-    font-size:1.25rem;
+    width:90%;
+    font-size:1rem;
     color:aliceblue;
     text-align: center;
     position:relative;
+    flex-direction: column;
     }
+
+  .footer-links {
+    padding-bottom: 1em;
+    justify-content: center;
+  }
+
+  .footer-link img{
+    width:30%;
+  }
+
+
   /*-- reusable components--*/
   /*-- reusable components--*/
   /*-- reusable components--*/
@@ -1829,12 +1796,6 @@ li p{
   
   .paragraph-container {
     padding: 3em 0;
-  }
-
-  .pc-2 {
-    position: relative;
-    max-width:90%;
-    
   }
   
   .paragraph{
@@ -1861,15 +1822,15 @@ li p{
   }
   
   .spacer{
-  height: 75px;
-  width:100%;
+    height: 75px;
+    width:100%;
   }
   
   
   .spacer-two{
     height: 30px;
     width:100%;
-    }
+  }
   
   .btext{
     position:relative;
@@ -1911,7 +1872,13 @@ li p{
     height:auto;
     padding:2em 0;
   }
-  
+
+  .s2{
+    background:linear-gradient(rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.521)), url(/img/alcohol-beer.jpg); 
+    background-position:center;
+    background-size:cover;
+  }
+   
   .b3{
     background: url(/img/beverage-bubble-citrus-357577.jpg);
     background-position:center;
@@ -1954,23 +1921,7 @@ li p{
     opacity: 1;
   }
 
-  .slide:first-child{
-    background: url(/img/TipsyBar8.jpg);
-    background-position: center;
-    background-size: cover;
-  }
-
-  .slide:nth-child(2){
-    background:url(/img/TipsyBar9.jpg) ;
-    background-position: center;
-    background-size:cover;
-  }
-
-  .slide:nth-child(3){
-    background: url(/img/adults-alcohol-alcoholic-beverage-1304473.jpg);
-    background-position: center;
-    background-size:cover;
-  }
+  
 
   .buttons{
     position: absolute;
@@ -1991,11 +1942,16 @@ li p{
     height: 10em;
   }
 
+
+  
   .grid-container{
+    
+    grid-template-columns: auto;
+    grid-template-rows: auto ;
     grid-template-areas:
-    "content-copy content-copy"
-    "pic-one pic-one"
-    "pic-two pic-two";
+    "content-copy "
+    "pic-one "
+    "pic-two ";
     grid-template-rows:  auto auto auto;
   }
 
@@ -2007,13 +1963,6 @@ li p{
     padding:0em;
   }
   
-  .numtwo{
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: 125px 125px;
-    margin-bottom:15px;
-    
-  }
   
   .gone {
     top:0;
@@ -2022,28 +1971,7 @@ li p{
     position: relative;
     display: block;
   }
-  
-  .gtwo{
-    
-    background: url(/img/beverage-citrus-close-up-1265910.jpg);
-    background-size:cover;
-    background-position: center;
-  }
-  
-  .gthree{
-    
-    background: url(/img/beverage-bubble-citrus-357577.jpg);
-    background-size:cover;
-    background-position: center;
-  }
-  
-  .gfour{
-    
-    background: url(/img/bottle-celebration-crowd-948199.jpg);
-    background-size:cover;
-    background-position: center;
-  }
-  
+
   .sone{
     background:linear-gradient(rgba(37, 37, 37, 0.808), rgba(0, 0, 0, 0)),url(/img/alcohol-bar-beer-989711.jpg);
     background-size: cover;
@@ -2051,25 +1979,15 @@ li p{
     height: 100%;
     padding:2em 0;
   }
-  
-  .stwo{
-    background:url(/img/adult-alcohol-alcoholic-beverage.jpg);
-    background-size: cover;
-    background-position: center;
+
+  .grid-container-two{
+    height: 10em;
+  }  
+
+  .end-box{
+    padding-top:4em;
   }
-  
-  .sthree{
-    background:url(/img/adult-alcoholic-beverage-bar.jpg);
-    background-size: cover;
-    background-position: center;
-  }
-  
-  .sfour{
-    background:url(/img/alcohol-alcoholic-beverage-bar.jpg);
-    background-size: cover;
-    background-position: center;
-  }
-  
+
   .db2{
     margin:0 auto;
     text-align:center;
@@ -2088,7 +2006,6 @@ li p{
     flex-direction: column;
     align-items: center;
     padding-bottom: 3.5em;
-    margin-top: 2em;
   }
   
   .divide-boxtwo{
